@@ -181,6 +181,7 @@ h1 {
   color: #f7c630;
   line-height: 1;
   text-transform: uppercase;
+  text-shadow: 1px 1px #1c1c1c, 2px 2px #1c1c1c;
 }
 
 p {
@@ -229,6 +230,7 @@ button {
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: underline;
   font-style: italic;
+  margin-top: 40px;
 }
 
 .header-nav-bar {
@@ -390,12 +392,37 @@ header {
 }
 
 .purveyors h2 {
-  text-decoration: underline;
+  font-style: italic;
+  position: relative;
+}
+
+.purveyors h2:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: gold;
+  bottom: -15px;
+  left: calc(50% - 5px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 1;
+}
+
+.purveyors h2::after {
+  position: absolute;
+  content: "";
+  background: #f7c630;
+  width: 200px;
+  height: 2px;
+  bottom: -11px;
+  left: calc(50% - 100px);
 }
 
 .purveyors-flex {
   width: 600px;
   margin: 0 auto;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

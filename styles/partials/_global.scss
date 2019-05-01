@@ -17,6 +17,8 @@ h1 {
     color: $gold;
     line-height: 1;
     text-transform: uppercase;
+    text-shadow: 1px 1px $black,
+    2px 2px $black;
 }
 
 p {
@@ -66,5 +68,6 @@ button {
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: underline;
     font-style: italic;
+    margin-top: 40px;
 
 }

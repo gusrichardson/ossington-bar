@@ -59,7 +59,28 @@
     margin-top: 40px;
     text-align: center;
     h2 {
-        text-decoration: underline;
+        font-style: italic;
+        position: relative;
+    }
+    h2:before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: gold;
+        bottom: -15px;
+        left: calc(50% - 5px);
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+    h2::after {
+        position: absolute;
+        content: "";
+        background: $gold;
+        width: 200px;;
+        height: 2px;
+        bottom: -11px;
+        left: calc(50% - 100px);
     }
 }
 
@@ -68,6 +89,7 @@
     width: 600px;
     // border: 2px solid red;
     margin: 0 auto;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
