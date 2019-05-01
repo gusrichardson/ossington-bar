@@ -1,0 +1,53 @@
+#about {
+    min-height: 100vh;
+    background: $black;
+    color: $white;
+    h2 {
+        color: $gold;
+    }
+}
+
+.about-wrapper {
+    // border: 2px solid red;
+}
+
+.about-flex {
+    display: flex;
+}
+
+.about-main-img {
+    width: 400px;
+    // height: 500px;
+    // border: 2px solid red;
+    // border: 10px solid red;
+    overflow: hidden;
+    // border: 2px solid blue;
+}
+.about-main-description {
+   width: 70%;
+//    border: 2px solid green;
+   padding: 0px;
+   padding-left: 40px;
+   display: flex;
+   align-items: center;
+}
+
+.gallery-flex {
+    margin-top: 40px;
+    height: 200px;
+    justify-content: space-between;
+    // border: 2px solid red;
+    display: flex;
+}
+
+.gallery-img {
+    width: 250px;
+    min-width: 24%;
+    min-height: 200px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        min-height: 100%;
+        position: bottom;
+    }
+}

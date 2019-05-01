@@ -1,0 +1,60 @@
+html {
+    font-size: 125%;
+}
+
+
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+ font-family: 'Josefin Sans', sans-serif;
+ color: $white;
+//  color: $black;
+//  color: $gold;
+}
+
+h1 {
+    font-size: 4rem;
+    color: $gold;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    // color: $white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+ font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+section {
+    padding: 80px 0px;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
