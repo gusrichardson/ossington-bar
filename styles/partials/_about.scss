@@ -39,15 +39,44 @@
     // border: 2px solid red;
     display: flex;
 }
+.gallery-img:nth-child(4){
+    margin-right: 0;
+}
 
 .gallery-img {
-    width: 250px;
-    min-width: 24%;
+    width: calc(25% - 30px);
     min-height: 200px;
     overflow: hidden;
+    margin-right: 30px;
     img {
         width: 100%;
         min-height: 100%;
         position: bottom;
     }
+}
+
+.purveyors {
+    margin-top: 40px;
+    text-align: center;
+    h2 {
+        text-decoration: underline;
+    }
+}
+
+
+.purveyors-flex {
+    width: 600px;
+    // border: 2px solid red;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meat {
+    width: 50%;
+}
+
+.fish {
+    text-align: right;
+    width: 50%;
 }

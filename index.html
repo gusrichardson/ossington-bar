@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ossington Stop | Handmade Russian Cuisine</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Lato" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -17,10 +19,10 @@
                 <img src="assets/ossington-logo.jpg" alt="Ossington Stop logo">
             </div> -->
             <ul class="header-nav">
-                <li>home</li>
-                <li>about</li>
-                <li>menu</li>
-                <li>contact</li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <div class="header-flex">
@@ -35,16 +37,16 @@
     <main>
         <section id="about">
             <div class="wrapper about-wrapper">
-                <h2>About</h2>
+                <h2>about</h2>
                 <div class="about-flex">
                     <div class="about-main-img">
-                        <img src="assets/dennis.png" alt="Ossington Stop owner and chef, Dennis">
+                        <img src="assets/denis.png" alt="Ossington Stop chef and owner, Denis">
                     </div>
                     <div class="about-main-description">
                         <div class="about-text">
                             <p>small and homey russian bar located at dundas w and ossington.</p>
                             <p> we work with local suppliers
-                                to provide quality product and real Russian hospitality</p>
+                                to provide quality product and real Russian hospitality.</p>
                         </div>
                     </div>
                 </div>
@@ -65,25 +67,173 @@
                     <div class="gallery-img">
                         <img src="assets/fish-n-beer.jpg" alt="a pint of beer with some pickled fish">
 
-
+                    </div>
+                </div>
+                <div class="purveyors">
+                    <h2>purveyors</h2>
+                    <div class="purveyors-flex">
+                        <div class="meat">
+                            <p>meat ~ Sanagan's</p>
+                        </div>
+                        <div class="fish">
+                            <p>fish ~ Brother's Fisheries</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="menu">
             <div class="wrapper menu-wrapper">
+                <div class="menu">
 
+                    <!-- FOOD MENU SLIDE -->
+                    <div class="menu-slide" id="food">
+                        <h2>Food</h2>
+                        <div class="food-flex">
+                            <div class="food-column">
+                                <div class="food-item">
+                                    <h3>Borsch</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, odit.</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Khinkali</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, in.</p>
+                                    <p>$10</p>
+
+                                </div>
+                                <div class="food-item">
+                                    <h3>Cabbage Rolls</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
+                                    <p>$10</p>
+
+                                </div>
+
+                            </div>
+                            <div class="food-column">
+                                <div class="food-item">
+                                    <h3>Beet Salad</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, suscipit?</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Salo</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officiis?</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Crepes</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, debitis.</p>
+                                    <p>$10</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button id="show-drinks">Drinks</button>
+                    </div>
+
+                    <!-- DRINKS MENU SLIDE -->
+                    <div class="menu-slide" id="drinks">
+                        <h2>Drinks</h2>
+                        <div class="food-flex">
+                            <div class="food-column">
+                                <div class="food-item">
+                                    <h3>Beau's</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, odit.</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Brickworks</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, in.</p>
+                                    <p>$10</p>
+
+                                </div>
+                                <div class="food-item">
+                                    <h3>Barking Squirrel</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
+                                    <p>$10</p>
+
+                                </div>
+
+                            </div>
+                            <div class="food-column">
+                                <div class="food-item">
+                                    <h3>Red Wine</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, suscipit?</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>White Wine</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officiis?</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Bar Rail</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, debitis.</p>
+                                    <p>$10</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button id="show-food">Food</button>
+                    </div>
+                </div>
                 <div class="purveyors">
 
                 </div>
             </div>
         </section>
         <section id="contact">
+            <div class="wrapper contact-wrapper">
+                <div class="contact-flex">
+                    <div class="contact">
+                        <h2>contact</h2>
+                        <p>ossingtonstop@gmail.com</p>
+                        <p>647-555-5555</p>
+                        <p>1164 Dundas St. West</p>
+                        <p>Toronto, ON</p>
+                        <a href="https://m.facebook.com/OssStop/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ossington_stop/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="hours">
+                        <h2>hours</h2>
+                        <div class="day-and-time">
+                            <div class="day">
+                                <p>monday</p>
+                                <p>tuesday</p>
+                                <p>wednesday</p>
+                                <p>thursday</p>
+                                <p>friday</p>
+                                <p>saturday</p>
+                                <p>sunday</p>
+                            </div>
+                            <div class="time">
+                                <p>closed</p>
+                                <p>6pm - 12am</p>
+                                <p>6pm - 12am</p>
+                                <p>6pm - 12am</p>
+                                <p>6pm - 2am</p>
+                                <p>6pm - 2am</p>
+                                <p>closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.7348847187334!2d-79.42203553605171!3d43.649426247536184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34f915d34c4b%3A0xda3326eacb83a57c!2sThe+Ossington+Stop!5e0!3m2!1sen!2sca!4v1556744121604!5m2!1sen!2sca"
+                        width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
 
         </section>
     </main>
-</body>
-
+    <footer>
+        <p>Copyright © 2019</p>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
