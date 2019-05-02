@@ -228,9 +228,9 @@ button {
   border: none;
   background: transparent;
   font-family: 'Josefin Sans', sans-serif;
-  text-decoration: underline;
   font-style: italic;
   margin-top: 40px;
+  text-decoration: underline;
 }
 
 .header-nav-bar {
@@ -292,7 +292,7 @@ button {
 
 header {
   min-height: 100vh;
-  background: url(../../assets/borsch.jpg);
+  background: url(../assets/borsch.jpg);
   background-position: 20%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -344,6 +344,7 @@ header {
 .about-main-img {
   width: 400px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .about-main-description {
@@ -378,12 +379,12 @@ header {
   min-height: 200px;
   overflow: hidden;
   margin-right: 30px;
+  border-radius: 5px;
 }
 
 .gallery-img img {
-  width: 100%;
-  min-height: 100%;
-  position: bottom;
+  max-width: 100%;
+  height: auto;
 }
 
 .purveyors {
@@ -442,7 +443,7 @@ header {
 
 #menu {
   min-height: 100vh;
-  background: url(../../assets/ossington-bar-black-white.jpg);
+  background: url(../assets/ossington-bar-black-white.jpg);
   background-position: 10%;
   background-attachment: fixed;
   background-size: cover;
@@ -568,6 +569,8 @@ header {
 
 iframe {
   width: 40%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 footer {
