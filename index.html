@@ -19,18 +19,29 @@
             <!-- <div class="logo-container">
                 <img src="assets/ossington-logo.jpg" alt="Ossington Stop logo">
             </div> -->
-            <ul class="header-nav">
+            <ul class="header-nav english">
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#menu">menu</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
+            <ul class="header-nav russian display-none">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">около</a></li>
+                <li><a href="#menu">меню</a></li>
+                <li><a href="#contact">контакт</a></li>
+            </ul>
+            <button class="translate english">русский</button>
+            <button class="translate russian display-none">english</button>
+            <!-- <button class="translate-english">English</button> -->
         </nav>
         <div class="header-flex">
             <div class="welcome-text">
                 <h1>Ossington Stop</h1>
-                <h2>a dark, cozy bar serving handmade russian cuisine</h2>
-                <h2>and cheap drinks</h2>
+                <h2 class="english">a dark, cozy bar serving handmade russian cuisine</h2>
+                <h2 class="english">and cheap drinks</h2>
+                <h2 class="russian display-none">темный, уютный бар, предлагающий русскую кухню ручной работы
+                    и дешевые напитки</h2>
             </div>
         </div>
 
@@ -45,9 +56,14 @@
                     </div>
                     <div class="about-main-description">
                         <div class="about-text">
-                            <p>small and homey russian bar located at dundas w and ossington.</p>
-                            <p> we work with local suppliers
-                                to provide quality product and real Russian hospitality.</p>
+                            <p class="english">small and homey russian bar located at dundas w and ossington.</p>
+                            <p class="english"> we work with local suppliers
+                                to provide quality product and real russian hospitality.</p>
+                            <p class="russian display-none">маленький и уютный русский бар, расположенный в Dundas W и
+                                Ossington.
+
+                                Мы работаем с местными поставщиками, чтобы обеспечить качественный продукт и настоящее
+                                российское гостеприимство.</p>
                         </div>
                     </div>
                 </div>
@@ -72,20 +88,21 @@
                 </div>
                 <div class="purveyors">
                     <h2>purveyors</h2>
-                    <div class="purveyors-flex">
-                        <div class="meat">
-                            <p>meat ~ Sanagan's</p>
-                        </div>
-                        <div class="fish">
-                            <p>fish ~ Brother's Fisheries</p>
-                        </div>
-                    </div>
+                    <ul class="purveyors-list">
+                        <li>Murray's Farm</li>
+                        <li>Sanagan's Meat Locker</li>
+                        <li>Henderson Brewing Company</li>
+
+                    </ul>
                 </div>
+            </div>
             </div>
         </section>
         <section id="menu">
             <div class="wrapper menu-wrapper">
-                <div class="menu">
+
+                <!-- ENGLISH MENU START -->
+                <div class="menu english">
 
                     <!-- FOOD MENU SLIDE -->
                     <div class="menu-slide" id="food">
@@ -181,46 +198,159 @@
                         <button id="show-food">Food</button>
                     </div>
                 </div>
+                <!-- ENGLISH MENU END -->
+                <!-- RUSSIAN MENU START -->
+                <div class="menu russian display-none">
+
+                    <!-- FOOD MENU SLIDE -->
+                    <div class="menu-slide" id="russian-food">
+                        <h2>питание</h2>
+                        <div class="food-flex">
+                            <div class="food-column">
+                                <div class="food-item">
+                                    <h3>Borsch</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, odit.</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Khinkali</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, in.</p>
+                                    <p>$10</p>
+
+                                </div>
+                                <div class="food-item">
+                                    <h3>Cabbage Rolls</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
+                                    <p>$10</p>
+
+                                </div>
+
+                            </div>
+                            <div class="food-column">
+                                <div class="food-item">
+                                    <h3>Beet Salad</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, suscipit?</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Salo</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officiis?</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Crepes</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, debitis.</p>
+                                    <p>$10</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button id="russian-show-drinks">алкоголь</button>
+                    </div>
+
+                    <!-- DRINKS MENU SLIDE -->
+                    <div class="menu-slide" id="russian-drinks">
+                        <h2>алкоголь</h2>
+                        <div class="food-flex">
+                            <div class="food-column">
+                                <div class="food-item">
+                                    <h3>Beau's</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, odit.</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Brickworks</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, in.</p>
+                                    <p>$10</p>
+
+                                </div>
+                                <div class="food-item">
+                                    <h3>Barking Squirrel</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
+                                    <p>$10</p>
+
+                                </div>
+
+                            </div>
+                            <div class="food-column">
+                                <div class="food-item">
+                                    <h3>Red Wine</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, suscipit?</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>White Wine</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officiis?</p>
+                                    <p>$10</p>
+                                </div>
+                                <div class="food-item">
+                                    <h3>Bar Rail</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, debitis.</p>
+                                    <p>$10</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button id="russian-show-food">питание</button>
+                    </div>
+                </div>
+                <!-- RUSSIAN MENU END -->
             </div>
         </section>
         <section id="contact">
             <div class="wrapper contact-wrapper">
                 <div class="contact-flex">
                     <div class="contact">
-                        <h2>contact</h2>
+                        <h2 class="english">contact</h2>
+                        <h2 class="russian display-none">контакт</h2>
                         <p>ossingtonstop@gmail.com</p>
-                        <p>647-555-5555</p>
+                        <p>647-869-0032</p>
                         <p>1164 Dundas St. West</p>
-                        <p>Toronto, ON</p>
+                        <p class="english">Toronto, ON</p>
+                        <p class="russian display-none">Торонто, Онтарио</p>
                         <a href="https://m.facebook.com/OssStop/"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.instagram.com/ossington_stop/"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="hours">
-                        <h2>hours</h2>
+                        <h2 class="english">hours</h2>
+                        <h2 class="russian display-none">часов</h2>
                         <div class="day-and-time">
                             <div class="day">
-                                <p>monday</p>
-                                <p>tuesday</p>
-                                <p>wednesday</p>
-                                <p>thursday</p>
-                                <p>friday</p>
-                                <p>saturday</p>
-                                <p>sunday</p>
+                                <p class="english">monday</p>
+                                <p class="russian display-none">понедельник</p>
+                                <p class="english">tuesday</p>
+                                <p class="russian display-none">вторник</p>
+                                <p class="english">wednesday</p>
+                                <p class="russian display-none">среда</p>
+                                <p class="english">thursday</p>
+                                <p class="russian display-none">Четверг</p>
+                                <p class="english">friday</p>
+                                <p class="russian display-none">пятница</p>
+                                <p class="english">saturday</p>
+                                <p class="russian display-none">суббота</p>
+                                <p class="english">sunday</p>
+                                <p class="russian display-none">Воскресенье</p>
                             </div>
                             <div class="time">
-                                <p>closed</p>
+                                <p class="english">closed</p>
+                                <p class="russian display-none">закрыто</p>
                                 <p>6pm - 12am</p>
                                 <p>6pm - 12am</p>
                                 <p>6pm - 12am</p>
                                 <p>6pm - 2am</p>
                                 <p>6pm - 2am</p>
-                                <p>closed</p>
+                                <p class="english">closed</p>
+                                <p class="russian display-none">закрыто</p>
                             </div>
                         </div>
                     </div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.7348847187334!2d-79.42203553605171!3d43.649426247536184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34f915d34c4b%3A0xda3326eacb83a57c!2sThe+Ossington+Stop!5e0!3m2!1sen!2sca!4v1556744121604!5m2!1sen!2sca"
-                        width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.7348847187334!2d-79.42203553605171!3d43.649426247536184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34f915d34c4b%3A0xda3326eacb83a57c!2sThe+Ossington+Stop!5e0!3m2!1sen!2sca!4v1556744121604!5m2!1sen!2sca"
+                            width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 

@@ -1,0 +1,20 @@
+.russian {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.translate {
+     position: absolute;
+    color: $white;
+    right: 20px;
+    top: -25px;
+    transition: all 0.3s;
+}
+
+.translate:hover {
+    color: $gold;
+    transform: scale(1.1);
+}

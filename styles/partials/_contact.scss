@@ -53,8 +53,14 @@
     margin-right: 10px;
 }
 
+.map-container {
+    width: 40%;
+    background: repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
+    padding: 10px;
+    border-radius: 5px;
+}
 
 iframe {
-    width: 40%;
     filter: grayscale(100%);
+    width: 100%;
 }

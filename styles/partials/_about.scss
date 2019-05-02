@@ -1,6 +1,10 @@
 #about {
     min-height: 100vh;
     background: $black;
+    // background: repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
+    // background: linear-gradient($black);
+    // background: url(../assets/dark-waves.svg);
+    // background: $black;
     color: $white;
     h2 {
         color: $gold;
@@ -17,6 +21,10 @@
 
 .about-main-img {
     width: 400px;
+    background: -moz-repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
+    background: -webkit-repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
+     background: repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
+     padding: 10px;
     // height: 500px;
     // border: 2px solid red;
     // border: 10px solid red;
@@ -37,6 +45,7 @@
     margin-top: 40px;
     height: 200px;
     justify-content: space-between;
+        // background: repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
     // border: 2px solid red;
     display: flex;
 }
@@ -89,21 +98,80 @@
     }
 }
 
-
-.purveyors-flex {
-    width: 600px;
+.purveyors-list {
+    margin-top: 30px;
+    // display: flex;
+    // flex-direction: column;
     // border: 2px solid red;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    li {
+        //  position: relative;
+        //  display: block;
+        //  width: 300px;
+        //  margin: 0 auto;
+        //  border: 2px solid red;
+    }
+    // li::before {
+    //      position: absolute;
+    //     content: "";
+    //     width: 7px;
+    //     height: 7px;
+    //     border-radius: 50%;
+    //     background: $gold;
+    //     left: -14px;
+    //     top: 13px;
+    // }
+    // li::after {
+    //       position: absolute;
+    //     content: "";
+    //     width: 7px;
+    //     height: 7px;
+    //     border-radius: 50%;
+    //     background: $gold;
+    //     right: -14px;
+    //     top: 13px;
+    // }
 }
 
-.meat {
-    width: 50%;
-}
+// .purveyors-flex {
+//     width: 80%;
+//     // border: 2px solid red;
+//     margin: 0 auto;
+//     padding-top: 20px;
+//     // display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     ul {
+//         position: relative;
+//         display: block;
+//         margin: 8px;
+//     }
+//     p::before {
+//         position: absolute;
+//         content: "";
+//         width: 7px;
+//         height: 7px;
+//         border-radius: 50%;
+//         background: $gold;
+//         left: -14px;
+//         top: 13px;
+//     }
+//      p::after {
+//         position: absolute;
+//         content: "";
+//         width: 7px;
+//         height: 7px;
+//         border-radius: 50%;
+//         background: $gold;
+//         right: -14px;
+//         top: 13px;
+//     }
+// }
 
-.fish {
-    text-align: right;
-    width: 50%;
-}
+// .meat {
+//     width: 50%;
+// }
+
+// .fish {
+//     text-align: right;
+//     width: 50%;
+// }

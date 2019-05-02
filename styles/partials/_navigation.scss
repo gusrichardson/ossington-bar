@@ -2,6 +2,7 @@
     background:$black;
     height: 50px;
     display: flex;
+    position: relative;
 }
 
 .logo-container {
@@ -24,6 +25,7 @@
     li {
         display: inline-block;
         margin-left: 30px;
+        // border: 2px solid red;
         // width: 100px;
         text-align: center;
         color: $white;;
@@ -47,6 +49,25 @@
     &::after {
         background: $gold;  
         left: 0;
+        bottom: 8px;
         width: 100%;  
     }
 }
+
+// .russian {
+//     display: block;
+// }
+
+// .display-none {
+//     display: none;
+// }
+
+// .translate-russian, .translate-english {
+//     position: absolute;
+//     color: $gold;
+//     right: 20px;
+//     top: -25px;
+// }
+
+
+
