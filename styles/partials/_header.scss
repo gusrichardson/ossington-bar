@@ -22,6 +22,15 @@ header {
     text-align: center;
 }
 
+#mobile-logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
 // MEDIA QUERIES
 
  @media (max-width: #{$tablet}){
@@ -34,6 +43,9 @@ header {
  @media (max-width: #{$mobile}){
      header {
          background-size: auto 100%;
+     }
+     #mobile-logo {
+         display: block;
      }
      .header-flex {
        padding: 0 10px;

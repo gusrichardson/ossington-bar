@@ -344,6 +344,15 @@ header {
   text-align: center;
 }
 
+#mobile-logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  display: none;
+}
+
 @media (max-width: 800px) {
   .header-flex {
     padding: 0 20px;
@@ -353,6 +362,9 @@ header {
 @media (max-width: 500px) {
   header {
     background-size: auto 100%;
+  }
+  #mobile-logo {
+    display: block;
   }
   .header-flex {
     padding: 0 10px;
