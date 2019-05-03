@@ -25,7 +25,7 @@
                 <li><a href="#menu">menu</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
-            <ul class="header-nav russian display-none">
+            <ul class="header-nav russian display-none" id="russian-nav">
                 <li><a href="#home">Главная</a></li>
                 <li><a href="#about">около</a></li>
                 <li><a href="#menu">меню</a></li>
@@ -47,6 +47,7 @@
 
     </header>
     <main>
+        <!-- ABOUT SECTION -->
         <section id="about">
             <div class="wrapper about-wrapper">
                 <h2 class="english">about</h2>
@@ -68,28 +69,26 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ABOUT GALLERY -->
                 <div class="gallery-flex">
-                    <div class="gallery-img">
-
-                        <img src="assets/russian-meal.png" alt="a traditional Russian meal">
-
+                    <div class="gallery-img img-one">
+                        <img src="assets/crepes-rect.png" alt="a plate of savoury crepes with a side of creme fraiche">
                     </div>
-                    <div class="gallery-img">
-                        <img src="assets/khinkali.jpg" alt="a plate of homemade khinkali dumplings">
-
+                    <div class="gallery-img img-two">
+                        <img src="assets/beer-rect" alt="two freshly poured pints of cold pilsner">
                     </div>
-                    <div class="gallery-img">
-                        <img src="assets/crepes.png" alt="a plate of crepes">
-
+                    <div class="gallery-img img-three">
+                        <img src="assets/khinkali-rect.png" alt="a plate of homemade khinkali dumplings">
                     </div>
-                    <div class="gallery-img">
-                        <img src="assets/cured-fish.png" alt="a plate of cured fish">
-
+                    <div class="gallery-img img-four">
+                        <img src="assets/cured-fish-rect.png"
+                            alt="a plate of cured salmon with a side of pickled vegetables and sourdough bread">
                     </div>
                 </div>
                 <p id="follow"><a href="https://www.instagram.com/ossington_stop/">instagram</a></p>
-                <!-- <a href="https://m.facebook.com/OssStop/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ossington_stop/"><i class="fab fa-instagram"></i></a> -->
+
+                <!-- PURVEYORS -->
                 <div class="purveyors">
                     <h2 class="english">purveyors</h2>
                     <h2 class="russian display-none">поставщики</h2>
@@ -103,6 +102,9 @@
             </div>
             </div>
         </section>
+        <!-- END OF ABOUT SECTION -->
+
+        <!-- MENU SECTION START -->
         <section id="menu">
             <div class="wrapper menu-wrapper">
 
@@ -156,8 +158,7 @@
                         </div>
                         <button id="show-drinks">Drinks</button>
                     </div>
-
-                    <!-- DRINKS MENU SLIDE -->
+                    <!-- ENGLISH DRINKS MENU SLIDE -->
                     <div class="menu-slide" id="drinks">
                         <h2>Drinks</h2>
                         <div class="food-flex">
@@ -207,7 +208,7 @@
                 <!-- RUSSIAN MENU START -->
                 <div class="menu russian display-none">
 
-                    <!-- FOOD MENU SLIDE -->
+                    <!-- RUSSIAN FOOD MENU SLIDE -->
                     <div class="menu-slide" id="russian-food">
                         <h2>питание</h2>
                         <div class="food-flex">
@@ -255,7 +256,7 @@
                         <button id="russian-show-drinks">алкоголь</button>
                     </div>
 
-                    <!-- DRINKS MENU SLIDE -->
+                    <!-- RUSSIAN DRINKS MENU SLIDE -->
                     <div class="menu-slide" id="russian-drinks">
                         <h2>алкоголь</h2>
                         <div class="food-flex">
@@ -303,7 +304,10 @@
                 </div>
                 <!-- RUSSIAN MENU END -->
             </div>
+            <div class="zigzag"></div>
         </section>
+        <!-- END OF MENU SECTION -->
+        <!-- START CONTACT SECTION -->
         <section id="contact">
             <div class="wrapper contact-wrapper">
                 <div class="contact-flex">

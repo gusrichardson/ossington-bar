@@ -278,9 +278,9 @@ button {
   position: absolute;
   content: "";
   height: 2px;
-  width: 10%;
-  bottom: 0;
-  left: 50%;
+  width: 5%;
+  bottom: -5px;
+  left: 45%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -288,7 +288,7 @@ button {
 .header-nav li:hover::after {
   background: #f7c630;
   left: 0;
-  bottom: 8px;
+  bottom: 0px;
   width: 100%;
 }
 
@@ -345,23 +345,21 @@ header {
 
 .about-main-img {
   width: 400px;
-  background: -webkit-repeating-linear-gradient(-45deg, #1c1c1c, #1c1c1c 2px, #f1f1f1 2px, #f1f1f1 4px);
   background: repeating-linear-gradient(-45deg, #1c1c1c, #1c1c1c 2px, #f1f1f1 2px, #f1f1f1 4px);
   padding: 10px;
   overflow: hidden;
-  border-radius: 5px;
 }
 
 .about-main-description {
   width: 70%;
-  padding: 0px;
-  padding-left: 40px;
+  padding: 0px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-right: 1px solid #e5e5e5;
 }
 
 .gallery-flex {
@@ -373,23 +371,53 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .gallery-img:nth-child(4) {
   margin-right: 0;
 }
 
+.img-one {
+  background: url(../assets/crepes-rect.png);
+  background-position: 90%;
+}
+
+.img-two {
+  background: url(../assets/beer-rect.png);
+  background-position: 10%;
+}
+
+.img-three {
+  background: url(../assets/khinkali-rect.png);
+  background-position: 60%;
+}
+
+.img-four {
+  background: url(../assets/cured-fish-rect.png);
+  background-position: 30%;
+}
+
 .gallery-img {
   width: calc(25% - 30px);
-  min-height: 200px;
+  height: 200px;
   overflow: hidden;
   margin-right: 30px;
-  border-radius: 5px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  position: relative;
 }
 
 .gallery-img img {
   max-width: 100%;
   height: auto;
+  visibility: hidden;
+}
+
+.gallery-img:hover {
+  background-size: auto 110%;
 }
 
 .purveyors {
@@ -443,6 +471,7 @@ header {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .menu {
@@ -497,8 +526,25 @@ header {
   display: none;
 }
 
+.zigzag {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+}
+
+.zigzag:before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(-45deg, transparent 33.33%, #1c1c1c 33.33%, #1c1c1c 66.66%, transparent 66.66%), linear-gradient(45deg, transparent 33.33%, #1c1c1c 33.33%, #1c1c1c 66.66%, transparent 66.66%);
+  background-size: 30px 60px;
+}
+
 #contact {
-  background-color: #1c1c1c;
+  padding-top: 60px;
+  background: #1c1c1c;
 }
 
 #contact h2 {
@@ -554,8 +600,6 @@ header {
 
 .fab:hover {
   color: #f7c630;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .fab:nth-child(1) {
@@ -566,7 +610,6 @@ header {
   width: 40%;
   background: repeating-linear-gradient(-45deg, #1c1c1c, #1c1c1c 2px, #f1f1f1 2px, #f1f1f1 4px);
   padding: 10px;
-  border-radius: 5px;
 }
 
 iframe {
@@ -601,7 +644,9 @@ footer {
 
 .translate:hover {
   color: #f7c630;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+}
+
+#russian-nav {
+  margin-top: 12px;
 }
 /*# sourceMappingURL=style.css.map */
