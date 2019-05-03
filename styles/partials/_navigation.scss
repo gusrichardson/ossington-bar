@@ -42,11 +42,11 @@
 // MEDIA QUERIES
 
  @media (max-width: #{$mobile}){
-     .header-nav {
+     #english-nav, #russian-nav {
          display: none;
     }
     .translate {
-        display: none;
+        // display: none;
     }
  }
 

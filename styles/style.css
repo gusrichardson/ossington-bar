@@ -306,10 +306,7 @@ button {
 }
 
 @media (max-width: 500px) {
-  .header-nav {
-    display: none;
-  }
-  .translate {
+  #english-nav, #russian-nav {
     display: none;
   }
 }
