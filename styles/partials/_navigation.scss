@@ -5,18 +5,6 @@
     position: relative;
 }
 
-.logo-container {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    // border: 2px solid pink;
-    img {
-        width: 100%;
-        border-radius: 50%;
-        border: 2px solid $gold;
-    }
-}
-
 .header-nav {
     height: 100%;
     display: flex;
@@ -25,11 +13,8 @@
     li {
         display: inline-block;
         margin-left: 30px;
-        // border: 2px solid red;
-        // width: 100px;
         text-align: center;
         color: $white;;
-        // background: $black;
         position: relative;
         cursor: pointer;
         &::after {
@@ -37,7 +22,6 @@
             content: "";
             height: 2px;
             width: 5%;
-            // background: $gold;
             bottom: -5px;
             left: 45%;
             transition: all 0.3s;
@@ -53,21 +37,6 @@
         width: 100%;  
     }
 }
-
-// .russian {
-//     display: block;
-// }
-
-// .display-none {
-//     display: none;
-// }
-
-// .translate-russian, .translate-english {
-//     position: absolute;
-//     color: $gold;
-//     right: 20px;
-//     top: -25px;
-// }
 
 
 

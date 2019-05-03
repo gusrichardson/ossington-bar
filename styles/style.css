@@ -242,18 +242,6 @@ button {
   position: relative;
 }
 
-.logo-container {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-}
-
-.logo-container img {
-  width: 100%;
-  border-radius: 50%;
-  border: 2px solid #f7c630;
-}
-
 .header-nav {
   height: 100%;
   display: -webkit-box;
@@ -315,11 +303,6 @@ header {
   background: RGBA(28, 28, 28, 0.3);
 }
 
-.welcome-container {
-  height: 400px;
-  margin: 0 auto;
-}
-
 .welcome-text {
   width: 100%;
   height: 300px;
@@ -345,6 +328,7 @@ header {
 
 .about-main-img {
   width: 400px;
+  background: -webkit-repeating-linear-gradient(-45deg, #1c1c1c, #1c1c1c 2px, #f1f1f1 2px, #f1f1f1 4px);
   background: repeating-linear-gradient(-45deg, #1c1c1c, #1c1c1c 2px, #f1f1f1 2px, #f1f1f1 4px);
   padding: 10px;
   overflow: hidden;
@@ -411,8 +395,6 @@ header {
 }
 
 .gallery-img img {
-  max-width: 100%;
-  height: auto;
   visibility: hidden;
 }
 
@@ -453,15 +435,15 @@ header {
   left: calc(50% - 100px);
 }
 
+.purveyors-list {
+  margin-top: 30px;
+}
+
 #follow {
   font-style: italic;
   text-decoration: underline;
   font-size: 0.8rem;
   opacity: 0.8;
-}
-
-.purveyors-list {
-  margin-top: 30px;
 }
 
 #menu {

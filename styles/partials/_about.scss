@@ -1,18 +1,10 @@
 #about {
     min-height: 100vh;
     background: $black;
-    // background: repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
-    // background: linear-gradient($black);
-    // background: url(../assets/dark-waves.svg);
-    // background: $black;
     color: $white;
     h2 {
         color: $gold;
     }
-}
-
-.about-wrapper {
-    // border: 2px solid red;
 }
 
 .about-flex {
@@ -21,50 +13,27 @@
 
 .about-main-img {
     width: 400px;
-    // background: -moz-repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
-    // background: -webkit-repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
+    background: -moz-repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
+    background: -webkit-repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
      background: repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
      padding: 10px;
-    // height: 500px;
-    // border: 2px solid red;
-    // border: 10px solid red;
     overflow: hidden;
-    // border-radius: 5px;
-    // border: 2px solid blue;
-    img {
-        // border-radius: 5px;
-    }
 }
 .about-main-description {
    width: 70%;
-//    border: 2px solid green;
    padding: 0px 40px;
-//    padding-left: 40px;
    display: flex;
    align-items: center;
    border-right: 1px solid $white;
 }
 
+// IMAGE GALLERY START
 .gallery-flex {
     margin-top: 40px;
     height: 200px;
     justify-content: space-between;
-    // background: $white;
-        // background: repeating-linear-gradient(-45deg, $black, $black 2px, #f1f1f1 2px, #f1f1f1 4px);
-    // border: 2px solid red;
     display: flex;
     position: relative;
-    // &::before {
-    //     position: absolute;
-    //     content: "";
-    //     width: 110%;
-    //     height: 2px;
-    //     background: $white;
-    //     transform: rotate(45deg);
-    //     top: 50%;
-    //     left: -5%;
-    //     z-index: 0;
-    // }
 }
 .gallery-img:nth-child(4){
     margin-right: 0;
@@ -72,7 +41,6 @@
 
 .img-one {
       background: url(../assets/crepes-rect.png);
-   
       background-position: 90%;
 }
 
@@ -83,7 +51,6 @@
 .img-three {
    background: url(../assets/khinkali-rect.png);
     background-position: 60%;
-  
 }
 
 .img-four {
@@ -96,33 +63,22 @@
     height: 200px;
     overflow: hidden;
     margin-right: 30px;
-    // border: 2px solid red;
-    // border: 5px solid $white;
-    // border-radius: 5px;
-    // background-size: cover;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    // background-position: 10%;
     transition: all 1s;
     position: relative;
-    // filter: grayscale(100%);
     img {
-        // width: 100%;
-        max-width: 100%;
-        // max-height: 100%;
-        height: auto;
         visibility: hidden;
-    
     }
 }
 
 .gallery-img:hover {
-    // background-position: 0%;
     background-size: auto 110%;
 }
+// IMAGE GALLERY END
 
 
-
+    //   PURVEYORS
 .purveyors {
     margin-top: 40px;
     text-align: center;
@@ -152,6 +108,10 @@
     }
 }
 
+.purveyors-list {
+    margin-top: 30px;
+}
+
 #follow {
     font-style: italic;
     text-decoration: underline;
@@ -159,36 +119,4 @@
     opacity: 0.8;
 }
 
-.purveyors-list {
-    margin-top: 30px;
-    // display: flex;
-    // flex-direction: column;
-    // border: 2px solid red;
-    li {
-        //  position: relative;
-        //  display: block;
-        //  width: 300px;
-        //  margin: 0 auto;
-        //  border: 2px solid red;
-    }
-    // li::before {
-    //      position: absolute;
-    //     content: "";
-    //     width: 7px;
-    //     height: 7px;
-    //     border-radius: 50%;
-    //     background: $gold;
-    //     left: -14px;
-    //     top: 13px;
-    // }
-    // li::after {
-    //       position: absolute;
-    //     content: "";
-    //     width: 7px;
-    //     height: 7px;
-    //     border-radius: 50%;
-    //     background: $gold;
-    //     right: -14px;
-    //     top: 13px;
-    // }
-}
+

@@ -1,3 +1,4 @@
+// MENU SECTION
 #menu {
     min-height: 100vh;
     background: url(../assets/ossington-bar-black-white.jpg);
@@ -8,12 +9,12 @@
     position: relative;
 }
 
+// ACTUAL MENU
 .menu {
     width: 700px;
     height: 750px;
     position: relative;
     margin: 0 auto;
-    // background: RGBA(229, 229, 229, 0.9);
     text-align: center;
     h2 {
         color: $black;
@@ -45,19 +46,20 @@
 }
 
 .food-item {
-    // border: 2px solid blue;
     margin-top: 20px;
 }
 
 #drinks {
     display: none;
 }
+// END ACTUAL MENU
 
+
+    // BOTTOM ZIGZAG STYLES
 .zigzag {
     position: absolute;
     height: 10px;
     width: 100%;
-    // background: red;
     bottom: 0;
 }
 
