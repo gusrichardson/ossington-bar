@@ -45,6 +45,9 @@ header {
      header {
          background: $black;
      }
+     .header-flex {
+         min-height: 80vh;
+     }
      #mobile-logo {
          display: block;
      }

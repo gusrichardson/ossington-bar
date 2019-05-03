@@ -364,6 +364,9 @@ header {
   header {
     background: #1c1c1c;
   }
+  .header-flex {
+    min-height: 80vh;
+  }
   #mobile-logo {
     display: block;
   }
