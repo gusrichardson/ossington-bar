@@ -233,6 +233,31 @@ button {
   text-decoration: underline;
 }
 
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: 95%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  p, li {
+    font-size: 0.9rem;
+  }
+}
+
 .header-nav-bar {
   background: #1c1c1c;
   height: 50px;
@@ -280,6 +305,15 @@ button {
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .header-nav {
+    display: none;
+  }
+  .translate {
+    display: none;
+  }
+}
+
 header {
   min-height: 100vh;
   background: url(../assets/borsch.jpg);
@@ -308,6 +342,18 @@ header {
   height: 300px;
   width: 900px;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .header-flex {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-flex {
+    padding: 0 10px;
+  }
 }
 
 #about {
@@ -392,6 +438,8 @@ header {
   -webkit-transition: all 1s;
   transition: all 1s;
   position: relative;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .gallery-img img {
@@ -399,7 +447,9 @@ header {
 }
 
 .gallery-img:hover {
-  background-size: auto 110%;
+  background-size: auto 107%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .purveyors {
@@ -444,6 +494,65 @@ header {
   text-decoration: underline;
   font-size: 0.8rem;
   opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+  .about-main-description {
+    border-right: 0;
+    padding: 0px 0px 0px 20px;
+  }
+  .about-main-img {
+    width: 300px;
+  }
+  .gallery-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
+  .gallery-img {
+    height: 230px;
+    margin: 5px;
+    width: calc(50% - 10px);
+  }
+  .gallery-img:nth-child(4) {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-main-img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-main-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-main-description {
+    width: 90%;
+    border: none;
+    padding: 20px 20px 0px;
+  }
+  .gallery-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-main-description {
+    padding: 20px 14px 0px;
+  }
+  .gallery-img {
+    height: 150px;
+  }
 }
 
 #menu {
@@ -524,6 +633,37 @@ header {
   background-size: 30px 60px;
 }
 
+@media (max-width: 800px) {
+  .menu {
+    width: 100%;
+    height: 800px;
+  }
+  .menu-slide {
+    padding: 40px 10px;
+  }
+  .food-column {
+    padding: 40px 10px;
+  }
+  .food-column p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    height: 850px;
+  }
+  .menu-slide {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu {
+    height: 840px;
+  }
+}
+
 #contact {
   padding-top: 60px;
   background: #1c1c1c;
@@ -598,6 +738,68 @@ iframe {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   width: 100%;
+}
+
+@media (max-width: 1250px) {
+  .contact-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hours, .contact {
+    width: 50%;
+  }
+  .map-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hours, .contact, .map-container {
+    width: 100%;
+  }
+  .contact {
+    text-align: center;
+  }
+  .hours, .map-container {
+    margin-top: 40px;
+  }
+  .hours h2, .map-container h2 {
+    text-align: center;
+  }
+  .day-and-time {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hours, .contact, .map-container {
+    width: 100%;
+  }
+  .contact {
+    text-align: center;
+  }
+  .hours, .map-container {
+    margin-top: 40px;
+  }
+  .day-and-time {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 footer {

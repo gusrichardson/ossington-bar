@@ -21,3 +21,18 @@ header {
     width: 900px;
     text-align: center;
 }
+
+// MEDIA QUERIES
+
+ @media (max-width: #{$tablet}){
+     .header-flex {
+       padding: 0 20px;
+     }
+ }
+
+
+ @media (max-width: #{$mobile}){
+     .header-flex {
+       padding: 0 10px;
+     }
+ }

@@ -39,4 +39,14 @@
 }
 
 
+// MEDIA QUERIES
+
+ @media (max-width: #{$mobile}){
+     .header-nav {
+         display: none;
+    }
+    .translate {
+        display: none;
+    }
+ }
 
