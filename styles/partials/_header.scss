@@ -33,7 +33,8 @@ header {
 
  @media (max-width: #{$mobile}){
      header {
-         background-image: url(../assets/borsch-mobile.jpg);
+         background-position: 90%;
+        //  background-image: url(../assets/borsch-mobile.jpg);
      }
      .header-flex {
        padding: 0 10px;

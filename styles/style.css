@@ -352,7 +352,7 @@ header {
 
 @media (max-width: 500px) {
   header {
-    background-image: url(../assets/borsch-mobile.jpg);
+    background-position: 90%;
   }
   .header-flex {
     padding: 0 10px;
