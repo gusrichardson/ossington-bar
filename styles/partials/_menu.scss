@@ -13,6 +13,7 @@
 .menu {
     width: 700px;
     height: 750px;
+    // border: 2px solid red;
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -23,6 +24,9 @@
     }
     h3 {
         color: $black;
+    }
+    p, li {
+        font-style: italic;
     }
 }
 
@@ -47,21 +51,48 @@
 
 #food .food-item {
     margin-top: 20px;
-    // border: 2px solid red;
     height: 30%;
-    p {
-        font-style: italic;
-    }
 }
 
+#food .food-item:nth-child(1),
+#food .food-item:nth-child(2),
+#food .food-item:nth-child(3),
+#drinks .food-item:nth-child(1),
+#drinks .food-item:nth-child(2),
+#drinks .food-item:nth-child(3){
+    margin-right: 5px;
+}
+
+
 #food .food-item:nth-child(3), #food .food-item:nth-child(6){
-    // border: 2px solid blue;
     height: 40%;
+}
+
+#drinks .food-item, #russian-drinks .food-item {
+    // border: 1px solid red;
+    margin-top: 20px;
 }
 
 #drinks {
     display: none;
+    width: 100%;
 }
+
+#drinks .food-flex, #food .food-flex {
+    margin-bottom: 20px;
+}
+
+#russian-food .food-item {
+    // border:1px solid red;
+    height: 30%;
+    margin-top: 20px;
+}
+
+#russian-drinks {
+    width: 100%;
+}
+
+
 // END ACTUAL MENU
 
 
