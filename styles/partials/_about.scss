@@ -24,7 +24,7 @@
    padding: 0px 40px;
    display: flex;
    align-items: center;
-   border-right: 1px solid $gold;
+   border-right: 1px solid $white;
 }
 
 // IMAGE GALLERY START
@@ -39,23 +39,25 @@
     margin-right: 0;
 }
 
-.img-one {
-      background: url(../assets/crepes-rect.png);
-      background-position: 90%;
+.img-two {
+    background: url(../assets/cured-meat.jpg);
+    // background-size: 300%;
+  background-position: 50%;
 }
 
-.img-two {
-    background: url(../assets/beer-rect.png);
-    background-position: 10%;
-}
 .img-three {
-   background: url(../assets/khinkali-rect.png);
+    background: url(../assets/hendersonbeer.jpg);
     background-position: 60%;
+   
+}
+.img-one {
+   background: url(../assets/khinkali-rect.png);
+    background-position: 60% 20%;
 }
 
 .img-four {
     background: url(../assets/cured-fish-rect.png);
-    background-position: 30%;
+    background-position: 60%;
 }
 
 .gallery-img {
@@ -63,19 +65,28 @@
     height: 200px;
     overflow: hidden;
     margin-right: 30px;
-    background-size: auto 100%;
+    background-size: auto 112%;
     background-repeat: no-repeat;
+    border: 5px solid $white;
     // transition: background-size 1s, filter 0.5s;
     transition: all 1s;
     position: relative;
+    // background-size: cover;
     filter: grayscale(0%);
     img {
         visibility: hidden;
     }
 }
 
+.gallery-img:nth-child(2){
+    background-size: auto 130%;
+    &:hover {
+        background-size: auto 136%;
+    }
+}
+
 .gallery-img:hover {
-    background-size: auto 107%;
+    background-size: auto 118%;
     filter: grayscale(0%);
 }
 // IMAGE GALLERY END
