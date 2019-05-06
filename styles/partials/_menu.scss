@@ -45,8 +45,18 @@
     width: 50%;
 }
 
-.food-item {
+#food .food-item {
     margin-top: 20px;
+    // border: 2px solid red;
+    height: 30%;
+    p {
+        font-style: italic;
+    }
+}
+
+#food .food-item:nth-child(3), #food .food-item:nth-child(6){
+    // border: 2px solid blue;
+    height: 40%;
 }
 
 #drinks {

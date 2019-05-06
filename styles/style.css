@@ -313,11 +313,106 @@ button {
 
 header {
   min-height: 100vh;
-  background: url(../assets/borsch.jpg);
-  background-position: 20%;
+  background: url(../assets/unsplash-boursh.jpg);
+  background-position: 100% 20%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-down-container {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  bottom: 0;
+}
+
+.letters-container {
+  width: 540px;
+  margin: 0 auto;
+  height: 80px;
+  position: relative;
+}
+
+.shutter {
+  position: absolute;
+  width: 100%;
+  height: 2000px;
+  background: linear-gradient(15deg, #f7c630 50%, transparent 50%);
+  bottom: -1900px;
+}
+
+.line-container {
+  height: 20px;
+  background: #1c1c1c;
+  position: relative;
+}
+
+.line-container .black-line {
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  background: #1c1c1c;
+  z-index: 10;
+}
+
+.letter {
+  position: absolute;
+}
+
+#letter-1 {
+  left: 0;
+}
+
+#letter-2 {
+  left: 70px;
+}
+
+#letter-3 {
+  left: 120px;
+}
+
+#letter-4 {
+  left: 170px;
+}
+
+#letter-5 {
+  left: 200px;
+}
+
+#letter-6 {
+  left: 270px;
+}
+
+#letter-7 {
+  left: 330px;
+}
+
+#letter-8 {
+  left: 380px;
+}
+
+#letter-9 {
+  left: 450px;
+}
+
+.scroll-down-bar {
+  height: 50px;
+  width: 2px;
+  background: #e5e5e5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  position: absolute;
+  bottom: 0;
+}
+
+.scroll-down-container:hover .scroll-down-bar {
+  height: 20px;
 }
 
 .header-flex {
@@ -331,7 +426,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   min-height: calc(100vh - 50px);
-  background: RGBA(28, 28, 28, 0.3);
+  background: RGBA(0, 0, 0, 0.3);
 }
 
 .welcome-text {
@@ -339,6 +434,8 @@ header {
   height: 300px;
   width: 900px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 #mobile-logo {
@@ -349,6 +446,18 @@ header {
   border-radius: 50%;
   display: none;
   border: 4px solid #f7c630;
+}
+
+#parallax-logo {
+  position: absolute;
+  left: 20%;
+  margin-left: -100px;
+  bottom: -200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #f7c630;
+  z-index: 1;
 }
 
 @media (max-width: 800px) {
@@ -408,7 +517,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px solid #f7c630;
 }
 
 .gallery-flex {
@@ -628,8 +737,17 @@ header {
   width: 50%;
 }
 
-.food-item {
+#food .food-item {
   margin-top: 20px;
+  height: 30%;
+}
+
+#food .food-item p {
+  font-style: italic;
+}
+
+#food .food-item:nth-child(3), #food .food-item:nth-child(6) {
+  height: 40%;
 }
 
 #drinks {
