@@ -17,12 +17,13 @@
         color: $white;;
         position: relative;
         cursor: pointer;
+        transition: all 0.3s;
         &::after {
             position: absolute;
             content: "";
             height: 2px;
             width: 5%;
-            bottom: -5px;
+            bottom: 0px;
             left: 45%;
             transition: all 0.3s;
         }
@@ -30,6 +31,7 @@
 }
 
 .header-nav li:hover{
+    // color: $gold;
     &::after {
         background: $gold;  
         left: 0;

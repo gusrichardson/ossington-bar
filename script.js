@@ -52,9 +52,9 @@ $('document').ready(function () {
     $(window).scroll(function () {
         let windowScroll = $(this).scrollTop();
         console.log(windowScroll);
-        $('.welcome-text').css({
-            transform: `translate(0px, ${windowScroll / 5}%)`
-        })
+        // $('.welcome-text').css({
+        //     transform: `translate(0px, ${windowScroll / 5}%)`
+        // })
         // $('#letter-1').css({
         //     transform: `translate(0px, ${windowScroll}%) rotate(-${windowScroll / 4}deg`
         // })
