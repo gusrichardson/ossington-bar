@@ -313,8 +313,8 @@ button {
 
 header {
   min-height: 100vh;
-  background: url(../assets/unsplash-boursh.jpg);
-  background-position: 100% 20%;
+  background: url(../assets/borsch-rect.jpg);
+  background-position: 100% 70%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -432,7 +432,7 @@ header {
 
 .welcome-text {
   width: 100%;
-  height: 300px;
+  height: 200px;
   width: 900px;
   text-align: center;
   position: relative;
@@ -522,7 +522,7 @@ header {
 }
 
 .gallery-flex {
-  margin-top: 40px;
+  margin-top: 20px;
   height: 200px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -557,8 +557,31 @@ header {
   background-position: 60%;
 }
 
+.gallery-two-img img {
+  display: none;
+}
+
+.gallery-two-img {
+  width: calc(50%);
+  border: 5px solid white;
+}
+
+.gallery-two-img:nth-child(1) {
+  background: url("../assets/raw-meat.jpg");
+  background-size: cover;
+  background-position: 0% 20%;
+  border-right: 2.5px solid #e5e5e5;
+}
+
+.gallery-two-img:nth-child(2) {
+  background: url("../assets/beet-salad.jpg");
+  background-size: 100% auto;
+  background-position: 0% 60%;
+  border-left: 2.5px solid #e5e5e5;
+}
+
 .gallery-img {
-  width: calc(25% - 30px);
+  width: calc(25% - 10px);
   height: 200px;
   overflow: hidden;
   margin-right: 30px;
@@ -588,6 +611,92 @@ header {
   background-size: auto 118%;
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
+}
+
+.alternate-main-flex {
+  height: 400px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alternate-flex-item {
+  width: calc(50% - 10px);
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.alt-img {
+  width: 50%;
+  height: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.alt-img:nth-child(1) {
+  background: url(../assets/khinkali-rect.png);
+  background-position: 60% 10%;
+  background-size: auto 130%;
+}
+
+.alt-img:nth-child(3) {
+  background: url(../assets/cured-meat.jpg);
+  background-position: 50%;
+  background-size: 100%;
+  background-position: 80% 30%;
+}
+
+.alt-img:nth-child(4) {
+  background: url(../assets/cured-fish-rect.png);
+  background-position: 60%;
+  background-size: cover;
+}
+
+.alt-img:nth-child(2) {
+  background: url(../assets/hendersonbeer.jpg);
+  background-position: 80%;
+  background-size: 100%;
+}
+
+.alt-img:hover {
+  background-size: 105%;
+}
+
+.alt-img:nth-child(1):hover {
+  background-size: 135%;
+}
+
+.long-img {
+  width: calc(50% - 10px);
+  height: 100%;
+  width: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.long-img:nth-child(1) {
+  background: url(../assets/raw-meat.jpg);
+  background-size: auto 100%;
+  background-position: 60% 0%;
+}
+
+.long-img:nth-child(2) {
+  background: url(../assets/beet-salad.jpg);
+  background-size: auto 100%;
+  background-position: 10% 0%;
 }
 
 .purveyors {
