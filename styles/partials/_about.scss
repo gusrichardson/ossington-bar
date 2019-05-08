@@ -64,14 +64,6 @@
     border:2px solid $gold;
 }
 
-@keyframes draw {
-  from {
-    stroke-dashoffset: 500;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
 // END MAIN FLEX CONTAINER
 
 // IMAGE GALLERY FLEX 
@@ -95,6 +87,7 @@
     width: 50%;
     height: 50%;
     transition: all 1s;
+    background-repeat: no-repeat;
     img {
          //sub for background image but keep accessible 
         position:absolute;
@@ -118,6 +111,7 @@
 .square-img {
     width: 100%;
     height: 50%;
+    background-repeat: no-repeat;
     img {
         //sub for background image but keep accessible 
         position:absolute;
@@ -158,6 +152,7 @@
 background: url(../assets/hendersonbeer.jpg);
 background-position: 80%;
 background-size: auto 120%;
+background-repeat: no-repeat;
 }
 .gallery-img:nth-child(2):hover {
     background-size: auto 125%;
@@ -221,6 +216,15 @@ background-size: auto 120%;
     margin-top: 30px;
 }
 
+@media (max-width: 1000px){
+    #meat-img, #fish-img, .gallery-img:nth-child(1), .gallery-img:nth-child(2), .long-img {
+        background-size: cover;
+    }
+     #meat-img:hover, #fish-img:hover, .long-img:hover, .gallery-img:nth-child(1):hover, .gallery-img:nth-child(2):hover {
+        background-size: cover;
+    }
+}
+
  @media (max-width: #{$tablet}){
     .about-main-description{
         border-right: 0;
@@ -229,18 +233,9 @@ background-size: auto 120%;
     .about-main-img {
         width: 300px;
     }
-    .gallery-flex {
-         flex-wrap: wrap;
-         height: auto;
+    .about-main-description::before, .about-main-description::after {
+         display: none;
      }
-     .gallery-img {
-         height: 230px;
-         margin: 5px;
-         width: calc(50% - 10px);
-     }
-     .gallery-img:nth-child(4){
-        margin: 5px;
-}
       .gallery-main-flex{
          flex-direction: column-reverse;
          height: auto;
@@ -253,28 +248,22 @@ background-size: auto 120%;
          background-repeat: no-repeat;
      }
          .long-img {
-         display: none;
+         display: block;
      }
      .long-container {
-         width: 100%;
-         flex-direction: row;
+         width: 50%;
+         flex-direction: column;
      }
         #meat-img, #fish-img {
-             width: 50%;
+             width: 100%;
              height: 200px;
              margin: 0;
              padding: 0;
-            //  border: 2px solid pink;
-            //  background-size: auto 100%;
-             img {
-                 display: block;
-             }
          }
          .logo-container {
              display: none;
          }
      .gallery-flex-item{
-        //  border: 1px solid red;
          width: 100%;
      }
 
@@ -301,14 +290,8 @@ background-size: auto 120%;
         .logo-container{
          display: none;
      }
-     .about-main-description::before, .about-main-description::after {
-         display: none;
-     }
+     
       
-    
-     .gallery-flex-item {
-         width: 100%;
-     }
      .gallery-img{
          height: 180px;
      }
@@ -318,15 +301,12 @@ background-size: auto 120%;
          #meat-img, #fish-img {
              width: 50%;
              height: 150px;
-             margin: 0;
-             padding: 0;
-            //  border: 2px solid pink;
-            //  background-size: auto 100%;
-             img {
-                 display: block;
-             }
          }
      }
+     .long-img {
+         display: none;
+     }
+
  }
 
  @media (max-width: #{$final-width}){
@@ -344,22 +324,6 @@ background-size: auto 120%;
          padding: 0;
      }
   
-     .gallery-main-flex{
-         flex-direction: column-reverse;
-         height: auto;
-     }
-     .gallery-flex-item {
-         width: 100%;
-        //  border: 2px solid red;
-        //  min-height: 200px;
-     }
-     .long-img {
-         display: none;
-         border:2px solid red;
-     }
-
-
-
  }
 
 

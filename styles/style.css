@@ -563,24 +563,6 @@ header {
   border: 2px solid #f7c630;
 }
 
-@-webkit-keyframes draw {
-  from {
-    stroke-dashoffset: 500;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes draw {
-  from {
-    stroke-dashoffset: 500;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 .gallery-main-flex {
   height: 400px;
   margin-top: 20px;
@@ -612,6 +594,7 @@ header {
   height: 50%;
   -webkit-transition: all 1s;
   transition: all 1s;
+  background-repeat: no-repeat;
 }
 
 .gallery-img img {
@@ -642,6 +625,7 @@ header {
 .square-img {
   width: 100%;
   height: 50%;
+  background-repeat: no-repeat;
 }
 
 .square-img img {
@@ -685,6 +669,7 @@ header {
   background: url(../assets/hendersonbeer.jpg);
   background-position: 80%;
   background-size: auto 120%;
+  background-repeat: no-repeat;
 }
 
 .gallery-img:nth-child(2):hover {
@@ -758,6 +743,15 @@ header {
   margin-top: 30px;
 }
 
+@media (max-width: 1000px) {
+  #meat-img, #fish-img, .gallery-img:nth-child(1), .gallery-img:nth-child(2), .long-img {
+    background-size: cover;
+  }
+  #meat-img:hover, #fish-img:hover, .long-img:hover, .gallery-img:nth-child(1):hover, .gallery-img:nth-child(2):hover {
+    background-size: cover;
+  }
+}
+
 @media (max-width: 800px) {
   .about-main-description {
     border-right: 0;
@@ -766,18 +760,8 @@ header {
   .about-main-img {
     width: 300px;
   }
-  .gallery-flex {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: auto;
-  }
-  .gallery-img {
-    height: 230px;
-    margin: 5px;
-    width: calc(50% - 10px);
-  }
-  .gallery-img:nth-child(4) {
-    margin: 5px;
+  .about-main-description::before, .about-main-description::after {
+    display: none;
   }
   .gallery-main-flex {
     -webkit-box-orient: vertical;
@@ -794,23 +778,20 @@ header {
     background-repeat: no-repeat;
   }
   .long-img {
-    display: none;
+    display: block;
   }
   .long-container {
-    width: 100%;
-    -webkit-box-orient: horizontal;
+    width: 50%;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #meat-img, #fish-img {
-    width: 50%;
+    width: 100%;
     height: 200px;
     margin: 0;
     padding: 0;
-  }
-  #meat-img img, #fish-img img {
-    display: block;
   }
   .logo-container {
     display: none;
@@ -844,12 +825,6 @@ header {
   .logo-container {
     display: none;
   }
-  .about-main-description::before, .about-main-description::after {
-    display: none;
-  }
-  .gallery-flex-item {
-    width: 100%;
-  }
   .gallery-img {
     height: 180px;
   }
@@ -863,11 +838,9 @@ header {
   .long-container #meat-img, .long-container #fish-img {
     width: 50%;
     height: 150px;
-    margin: 0;
-    padding: 0;
   }
-  .long-container #meat-img img, .long-container #fish-img img {
-    display: block;
+  .long-img {
+    display: none;
   }
 }
 
@@ -883,20 +856,6 @@ header {
     width: 50%;
     margin: 0;
     padding: 0;
-  }
-  .gallery-main-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    height: auto;
-  }
-  .gallery-flex-item {
-    width: 100%;
-  }
-  .long-img {
-    display: none;
-    border: 2px solid red;
   }
 }
 
