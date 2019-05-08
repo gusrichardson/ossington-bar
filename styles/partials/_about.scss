@@ -103,7 +103,7 @@
 .purveyors-container {
     width: 100%;
     height: 50%;
-    border: 2px solid red;
+    // border: 2px solid red;
 }
 
 .long-container {
@@ -174,13 +174,21 @@ background-repeat: no-repeat;
 }
 
 .long-img {
-      background: url(../assets/raw-meat.jpg);
+    background: url(../assets/raw-meat.jpg);
     background-size: auto 100%;
     background-position: 60% 0%;
-    width: calc(50% - 10px);
     height: 100%;
     width: 50%;
     transition: all 1s;
+    position: relative;
+    img {
+         max-width: 2px;
+        max-height: 2px;
+        bottom: 0;
+        left: 50%;
+        //sub for background image but keep accessible 
+        position:absolute;
+    }
 }
 .long-img:hover {
     background-size: auto 105%;
@@ -261,9 +269,7 @@ background-repeat: no-repeat;
          padding: 0;
          background-repeat: no-repeat;
      }
-    //      .long-img {
-    //      display: block;
-    //  }
+
      .long-container {
          width: 50%;
          flex-direction: column;
@@ -305,13 +311,9 @@ background-repeat: no-repeat;
      }
         .logo-container{
          display: none;
-        //  right: 10%;
+
      }
      
-    //  .long-img {
-    //      width: 50%;
-    //      height: 100%;
-    //  }
 
       
      .gallery-img, #meat-img, #fish-img{
@@ -325,9 +327,6 @@ background-repeat: no-repeat;
             //  width: 50%;
              height: 150px;
     }
-    //   .long-img {
-    //      display: none;
-    //  }
 
 }
 
@@ -335,12 +334,6 @@ background-repeat: no-repeat;
      #about {
          min-height: auto;
      }
-    //  .long-img {
-    //      height: 100%;
-    //      height: 300px;
-    //      margin: 0;
-    //      padding: 0;
-    //  }
      .about-main-description{
          padding: 20px 12px 0px;
 
