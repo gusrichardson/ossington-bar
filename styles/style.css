@@ -1018,6 +1018,7 @@ header {
   }
   .menu-slide {
     padding: 20px 0;
+    background: RGBA(229, 229, 229, 1);
   }
 }
 
@@ -1115,6 +1116,7 @@ iframe {
     width: 50%;
   }
   .map-container {
+    margin-top: 20px;
     width: 100%;
   }
 }
