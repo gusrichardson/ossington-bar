@@ -765,6 +765,8 @@ header {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     height: auto;
+    width: 80%;
+    margin: 0 auto;
   }
   .gallery-img {
     height: 200px;
