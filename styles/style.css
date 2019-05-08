@@ -801,7 +801,6 @@ header {
   }
   .gallery-flex-item {
     width: 100%;
-    border: 2px solid blue;
   }
 }
 
@@ -827,12 +826,14 @@ header {
     padding: 20px 14px 0px;
   }
   .logo-container {
+    width: 1px;
+    height: 1px;
     display: none;
+    right: 10%;
   }
   .long-img {
     width: 50%;
     height: 100%;
-    border: 4px solid green;
   }
   .gallery-img, #meat-img, #fish-img {
     height: 150px;
@@ -850,7 +851,7 @@ header {
     padding: 0;
   }
   .about-main-description {
-    padding: 20px 14px 0px;
+    padding: 20px 12px 0px;
   }
   .gallery-img {
     height: 150px;
