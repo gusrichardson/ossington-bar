@@ -291,21 +291,21 @@ background-repeat: no-repeat;
          display: none;
      }
      
+
       
-     .gallery-img{
-         height: 180px;
+     .gallery-img, #meat-img, #fish-img{
+         height: 150px;
      }
-          .long-container {
-         width: 100%;
-         flex-direction: row;
-         #meat-img, #fish-img {
-             width: 50%;
-             height: 150px;
-         }
-     }
-     .long-img {
-         display: none;
-     }
+        //   .long-container {
+        //  width: 100%;
+        //  flex-direction: row;
+        //  #meat-img, #fish-img {
+        //      width: 50%;
+        //      height: 150px;
+        //  }
+    //  .long-img {
+    //      display: none;
+    //  }
 
  }
 

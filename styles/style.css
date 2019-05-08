@@ -830,22 +830,8 @@ header {
   .logo-container {
     display: none;
   }
-  .gallery-img {
-    height: 180px;
-  }
-  .long-container {
-    width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .long-container #meat-img, .long-container #fish-img {
-    width: 50%;
+  .gallery-img, #meat-img, #fish-img {
     height: 150px;
-  }
-  .long-img {
-    display: none;
   }
 }
 
