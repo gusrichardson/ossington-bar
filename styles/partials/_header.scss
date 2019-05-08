@@ -112,8 +112,10 @@ header {
     justify-content: center;
     align-items: center;
     // REMOVED FOR PARALLAX
-    min-height: calc(100vh - 50px);
+    // min-height: calc(100vh - 50px);
+    min-height: 100vh;
     background:RGBA(0, 0, 0, 0.3);
+    // background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), 40%, rgba(0, 0, 0, 1));
 
     // EXPERIMENTING WITH ANGLED BACKGROUND
     // background: linear-gradient(15deg, $black 20%, rgba(0, 0, 0, 0.3) 20%);

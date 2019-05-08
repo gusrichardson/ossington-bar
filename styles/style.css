@@ -259,12 +259,32 @@ button {
 }
 
 .header-nav-bar {
-  background: #1c1c1c;
-  height: 50px;
+  background: #595959;
+  background: linear-gradient(180deg, #1c1c1c 53px, #e5e5e5 53px);
+  height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  -webkit-box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.4);
+          box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.4);
+}
+
+.logo-container {
+  width: 170px;
+  height: 40px;
+  padding-top: 5px;
+  position: absolute;
+  left: 50%;
+  margin-left: -85px;
+  top: 7px;
+  z-index: 0;
+}
+
+.logo-container p {
+  color: #e5e5e5;
 }
 
 .header-nav {
@@ -296,12 +316,12 @@ button {
   width: 5%;
   bottom: 0px;
   left: 45%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .header-nav li:hover::after {
-  background: #f7c630;
+  background: #e5e5e5;
   left: 0;
   bottom: 0px;
   width: 100%;
@@ -428,7 +448,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
   background: RGBA(0, 0, 0, 0.3);
 }
 
@@ -490,6 +510,7 @@ header {
 #about {
   min-height: 100vh;
   background: #1c1c1c;
+  background: linear-gradient(180deg, #e5e5e5 2px, #1c1c1c 2px);
   color: #e5e5e5;
   padding-bottom: 40px;
 }
@@ -521,33 +542,62 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 1px solid #e5e5e5;
+  position: relative;
 }
 
-.gallery-two-img img {
-  display: none;
+.about-main-description::after {
+  position: absolute;
+  content: "";
+  background: #e5e5e5;
+  height: 200px;
+  width: 2px;
+  right: 0;
 }
 
-.gallery-two-img {
-  width: calc(50%);
-  border: 5px solid white;
+.about-main-description::before {
+  position: absolute;
+  content: "";
+  background: #e5e5e5;
+  height: 10px;
+  width: 10px;
+  right: -4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 5;
 }
 
-.gallery-two-img:nth-child(1) {
-  background: url("../assets/raw-meat.jpg");
-  background-size: cover;
-  background-position: 0% 20%;
-  border-right: 2.5px solid #e5e5e5;
+.arms-svg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: -50px;
+  bottom: -470px;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 1;
+  border: 2px solid #f7c630;
 }
 
-.gallery-two-img:nth-child(2) {
-  background: url("../assets/beet-salad.jpg");
-  background-size: 100% auto;
-  background-position: 0% 60%;
-  border-left: 2.5px solid #e5e5e5;
+@-webkit-keyframes draw {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
-.alternate-main-flex {
+@keyframes draw {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.gallery-main-flex {
   height: 400px;
   margin-top: 20px;
   display: -webkit-box;
@@ -558,7 +608,7 @@ header {
           justify-content: space-between;
 }
 
-.alternate-flex-item {
+.gallery-flex-item {
   width: calc(50% - 10px);
   width: 50%;
   display: -webkit-box;
@@ -573,14 +623,19 @@ header {
       flex-wrap: wrap;
 }
 
-.alt-img {
+.gallery-img {
   width: 50%;
   height: 50%;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.wide-img {
+.gallery-img img {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.purveyors-container {
   width: 100%;
   height: 50%;
 }
@@ -605,52 +660,61 @@ header {
   height: 50%;
 }
 
+.square-img img {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
 #meat-img {
   background: url(../assets/cured-meat.jpg);
-  background-size: cover;
+  background-size: 100% auto;
   background-position: 0% 40%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#meat-img:hover {
+  background-size: 105% auto;
 }
 
 #fish-img {
   background: url(../assets/cured-fish-rect.png);
-  background-size: cover;
-  background-position: 80%;
+  background-size: auto 120%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.alt-img:nth-child(1) {
+#fish-img:hover {
+  background-size: auto 125%;
+}
+
+.gallery-img:nth-child(1) {
   background: url(../assets/khinkali-rect.png);
   background-position: 60% 10%;
   background-size: auto 130%;
 }
 
-.alt-img:nth-child(3) {
-  background: url(../assets/cured-meat.jpg);
-  background-position: 50%;
-  background-size: 100%;
-  background-position: 80% 30%;
-}
-
-.alt-img:nth-child(4) {
-  background: url(../assets/cured-fish-rect.png);
-  background-position: 60%;
-  background-size: cover;
-}
-
-.alt-img:nth-child(2) {
+.gallery-img:nth-child(2) {
   background: url(../assets/hendersonbeer.jpg);
   background-position: 80%;
-  background-size: 100%;
+  background-size: auto 120%;
 }
 
-.alt-img:hover {
-  background-size: 105%;
+.gallery-img:nth-child(2):hover {
+  background-size: auto 125%;
 }
 
-.alt-img:nth-child(1):hover {
-  background-size: 135%;
+.gallery-img:nth-child(1):hover {
+  background-size: auto 135%;
 }
 
 .long-img {
+  background: url(../assets/raw-meat.jpg);
+  background-size: auto 100%;
+  background-position: 60% 0%;
   width: calc(50% - 10px);
   height: 100%;
   width: 50%;
@@ -658,10 +722,8 @@ header {
   transition: all 1s;
 }
 
-.long-img:nth-child(2) {
-  background: url(../assets/raw-meat.jpg);
-  background-size: auto 100%;
-  background-position: 60% 0%;
+.long-img:hover {
+  background-size: auto 105%;
 }
 
 .social {
@@ -676,7 +738,6 @@ header {
 
 .purveyors {
   padding-top: 30px;
-  background: #1c1c1c;
   height: 100%;
   text-align: center;
 }
@@ -711,13 +772,6 @@ header {
 
 .purveyors-list {
   margin-top: 30px;
-}
-
-#follow {
-  font-style: italic;
-  text-decoration: underline;
-  font-size: 0.8rem;
-  opacity: 0.8;
 }
 
 @media (max-width: 800px) {
@@ -1082,8 +1136,8 @@ footer {
   color: #e5e5e5;
   right: 20px;
   top: -25px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .translate:hover {

@@ -1,8 +1,30 @@
 .header-nav-bar {
-    background:$black;
-    height: 50px;
+    background: $grey;
+    // background:$black;
+    background: linear-gradient(180deg, $black 53px, $white 53px);
+    height: 55px;
     display: flex;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    box-shadow: 0px 4px 10px -4px rgba(65,64,66,0.4);
+    // position: relative;
+}
+
+.logo-container {
+    width: 170px;
+    height: 40px;
+    padding-top: 5px;
+    // border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    margin-left: -85px;
+    // left: calc(50% - 30px);
+    top: 7px;
+    z-index: 0;
+    p {
+        color: $white;
+    }
 }
 
 .header-nav {
@@ -25,7 +47,7 @@
             width: 5%;
             bottom: 0px;
             left: 45%;
-            transition: all 0.3s;
+            transition: all 0.1s;
         }
     }
 }
@@ -33,7 +55,7 @@
 .header-nav li:hover{
     // color: $gold;
     &::after {
-        background: $gold;  
+        background: $white;  
         left: 0;
         bottom: 0px;
         width: 100%;  

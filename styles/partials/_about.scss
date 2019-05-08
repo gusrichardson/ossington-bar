@@ -1,6 +1,7 @@
 #about {
     min-height: 100vh;
     background: $black;
+    background: linear-gradient(180deg, $white 2px, $black 2px);
     color: $white;
     padding-bottom: 40px;
     h2 {
@@ -8,6 +9,7 @@
     }
 }
 
+// MAIN FLEX CONTAINER WITH DENIS IMAGE AND DESCRIPTION
 .about-flex {
     display: flex;
 }
@@ -25,55 +27,71 @@
    padding: 0px 40px;
    display: flex;
    align-items: center;
-   border-right: 1px solid $white;
+
+//    border-right: 2px solid $white;
+    position: relative;
+}
+.about-main-description::after {
+    position: absolute;
+    content: "";
+    background: $white;
+    height: 200px;
+    width: 2px;
+    right: 0;
 }
 
-// IMAGE GALLERY START
-// .gallery-flex {
-//     margin-top: 20px;
-//     height: 200px;
-//     justify-content: space-between;
-//     display: flex;
-//     position: relative;
-// }
-// .gallery-img:nth-child(4){
-//     margin-right: 0;
-// }
-
-.gallery-two-img img {
-    display: none;
+.about-main-description::before {
+    position: absolute;
+    content: "";
+    background: $white;
+    height: 10px;
+    width: 10px;
+    right: -4px;
+    transform: rotate(45deg);
+    z-index: 5;
 }
 
-.gallery-two-img {
-    width: calc(50%);
-    border: 5px solid white;
+.arms-svg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right:-50px;
+    bottom: -470px;
+    z-index: 1;
+    border-radius: 50%;
+    overflow:hidden;
+    opacity: 1;
+    border:2px solid $gold;
+    // path {
+    //     stroke-dasharray: 500;
+    //     stroke-dashoffset: 500;
+    //     animation: draw 4s linear alternate 2s infinite;
+    //     transition: all 2s;
+    // }
+    // svg:hover path {
+    //     fill: $gold;
+    // }
 }
 
-.gallery-two-img:nth-child(1){
-    background: url('../assets/raw-meat.jpg');
-    background-size: cover;
-    background-position: 0% 20%;
-    border-right: 2.5px solid $white;
+@keyframes draw {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
+// END MAIN FLEX CONTAINER
 
-.gallery-two-img:nth-child(2){
-     background: url('../assets/beet-salad.jpg');
-    background-size: 100% auto;
-    background-position: 0% 60%;
-    border-left: 2.5px solid $white;
-}
-
-// IMAGE GALLERY END
-
-            // ALTERNATE GALLERY
-.alternate-main-flex {
+// IMAGE GALLERY FLEX 
+.gallery-main-flex {
     height: 400px;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.alternate-flex-item {
+.gallery-flex-item {
     width: calc(50% - 10px);
     width: 50%;
     display: flex;
@@ -82,13 +100,18 @@
     flex-wrap: wrap;
 }
 
-.alt-img {
+.gallery-img {
     width: 50%;
     height: 50%;
     transition: all 1s;
+    img {
+         //sub for background image but keep accessible 
+        position:absolute;
+        clip:rect(0 0 0 0)
+    }
 }
 
-.wide-img {
+.purveyors-container {
     width: 100%;
     height: 50%;
 }
@@ -104,95 +127,78 @@
 .square-img {
     width: 100%;
     height: 50%;
+    img {
+        //sub for background image but keep accessible 
+        position:absolute;
+        clip:rect(0 0 0 0)
+    }
 }
 #meat-img {
     background: url(../assets/cured-meat.jpg);
-    background-size: cover;
+    background-size: 100% auto;
     background-position: 0% 40%;
+      background-repeat: no-repeat;
+      transition: all 1s;
+}
+
+#meat-img:hover {
+    background-size: 105% auto;
 }
 
 #fish-img {
     background: url(../assets/cured-fish-rect.png);
-    background-size: cover;
-    background-position: 80%;
+    background-size: auto 120%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+#fish-img:hover {
+    background-size: auto 125%;
 }
 
-.alt-img:nth-child(1){
+.gallery-img:nth-child(1){
     background: url(../assets/khinkali-rect.png);
     background-position: 60% 10%;
     background-size: auto 130%;
-//     background: url(../assets/beet-salad.jpg);
-//     background-size: 100%;
-//     background-position: 0% 30%;
-// 
-}
-.alt-img:nth-child(3){
-    background: url(../assets/cured-meat.jpg);
-  background-position: 50%;
-  background-size: 100%;
-  background-position: 80% 30%;
+  
 }
 
-.alt-img:nth-child(4){
-   background: url(../assets/cured-fish-rect.png);
-    background-position: 60%;
-    background-size: cover;
-}
-
-.alt-img:nth-child(2){
+.gallery-img:nth-child(2){
 background: url(../assets/hendersonbeer.jpg);
 background-position: 80%;
-background-size: 100%;
+background-size: auto 120%;
+}
+.gallery-img:nth-child(2):hover {
+    background-size: auto 125%;
 }
 
-.alt-img:hover {
-    background-size: 105%;
-}
-
-.alt-img:nth-child(1):hover {
-    background-size: 135%;
+.gallery-img:nth-child(1):hover {
+    background-size: auto 135%;
 }
 
 .long-img {
+      background: url(../assets/raw-meat.jpg);
+    background-size: auto 100%;
+    background-position: 60% 0%;
     width: calc(50% - 10px);
     height: 100%;
     width: 50%;
     transition: all 1s;
-    // border: 5px solid $white;
-    // border: 5px solid $gold;
 }
-
-.long-img:nth-child(2){
-    background: url(../assets/raw-meat.jpg);
-    background-size: auto 100%;
-    background-position: 60% 0%;
+.long-img:hover {
+    background-size: auto 105%;
 }
 
 .social {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    // border: 1px solid red;
 }
-
-// .long-img:nth-child(2){
-//     background: url(../assets/beet-salad.jpg);
-//     background-size: auto 100%;
-//     background-position: 10% 0%;
-// }
-
 
     //   PURVEYORS
 .purveyors {
-
-    //for experiement
     padding-top: 30px;
-    background: $black;
     height: 100%;
-    //end experiment
-
-
-    // margin-top: 40px;
     text-align: center;
     h2 {
         font-style: italic;
@@ -222,13 +228,6 @@ background-size: 100%;
 
 .purveyors-list {
     margin-top: 30px;
-}
-
-#follow {
-    font-style: italic;
-    text-decoration: underline;
-    font-size: 0.8rem;
-    opacity: 0.8;
 }
 
  @media (max-width: #{$tablet}){
