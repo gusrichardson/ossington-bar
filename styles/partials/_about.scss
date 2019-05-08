@@ -174,7 +174,8 @@ background-repeat: no-repeat;
 }
 
 .long-img {
-    background: url(../assets/raw-meat.jpg);
+    background: $gold;
+    // background: url(../assets/raw-meat.jpg);
     background-size: auto 100%;
     background-position: 60% 0%;
     height: 100%;

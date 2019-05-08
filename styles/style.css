@@ -699,7 +699,7 @@ header {
 }
 
 .long-img {
-  background: url(../assets/raw-meat.jpg);
+  background: #f7c630;
   background-size: auto 100%;
   background-position: 60% 0%;
   height: 100%;
