@@ -250,8 +250,9 @@ background-repeat: no-repeat;
       .gallery-main-flex{
          flex-direction: column-reverse;
          height: auto;
-         width: 80%;
-         margin: 0 auto;
+         width: 100%;
+        //  width: 80%;
+        //  margin: 0 auto;
      }
        .gallery-img {
          height: 200px;
