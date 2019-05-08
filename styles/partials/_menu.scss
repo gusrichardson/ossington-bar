@@ -119,7 +119,7 @@
  @media (max-width: #{$tablet}){
          .menu {
          width: 100%;
-         height: 800px;
+         height: 880px;
      }
       .menu-slide {
          padding: 40px 10px;
@@ -134,15 +134,18 @@
 
  @media (max-width: #{$mobile}){
         .menu {
-         height: 850px;
+         height: 900px;
      }
      .menu-slide {
-         padding: 40px 0;
+         padding: 20px 0;
      }
  }
 
  @media (max-width: #{$final-width}) {
      .menu {
-         height: 840px;
+         min-height: 950px;
+     }
+     .menu-slide {
+         padding: 20px 0;
      }
  }
