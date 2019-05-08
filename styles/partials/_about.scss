@@ -51,7 +51,7 @@
     z-index: 5;
 }
 
-.arms-svg {
+.logo-container {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -62,15 +62,6 @@
     overflow:hidden;
     opacity: 1;
     border:2px solid $gold;
-    // path {
-    //     stroke-dasharray: 500;
-    //     stroke-dashoffset: 500;
-    //     animation: draw 4s linear alternate 2s infinite;
-    //     transition: all 2s;
-    // }
-    // svg:hover path {
-    //     fill: $gold;
-    // }
 }
 
 @keyframes draw {
@@ -250,6 +241,43 @@ background-size: auto 120%;
      .gallery-img:nth-child(4){
         margin: 5px;
 }
+      .gallery-main-flex{
+         flex-direction: column-reverse;
+         height: auto;
+     }
+       .gallery-img {
+         height: 200px;
+         width: 50%;
+         margin: 0;
+         padding: 0;
+         background-repeat: no-repeat;
+     }
+         .long-img {
+         display: none;
+     }
+     .long-container {
+         width: 100%;
+         flex-direction: row;
+     }
+        #meat-img, #fish-img {
+             width: 50%;
+             height: 200px;
+             margin: 0;
+             padding: 0;
+            //  border: 2px solid pink;
+            //  background-size: auto 100%;
+             img {
+                 display: block;
+             }
+         }
+         .logo-container {
+             display: none;
+         }
+     .gallery-flex-item{
+        //  border: 1px solid red;
+         width: 100%;
+     }
+
  }
 
   @media (max-width: 600px){
@@ -268,22 +296,69 @@ background-size: auto 120%;
      }
          .about-main-description{
          width: 90%;
-         border: none;
          padding: 20px 20px 0px;
+     }
+        .logo-container{
+         display: none;
+     }
+     .about-main-description::before, .about-main-description::after {
+         display: none;
+     }
+      
+    
+     .gallery-flex-item {
+         width: 100%;
      }
      .gallery-img{
          height: 180px;
      }
+          .long-container {
+         width: 100%;
+         flex-direction: row;
+         #meat-img, #fish-img {
+             width: 50%;
+             height: 150px;
+             margin: 0;
+             padding: 0;
+            //  border: 2px solid pink;
+            //  background-size: auto 100%;
+             img {
+                 display: block;
+             }
+         }
+     }
  }
 
  @media (max-width: #{$final-width}){
+     #about {
+         min-height: auto;
+     }
      .about-main-description{
          padding: 20px 14px 0px;
 
      }
      .gallery-img {
          height: 150px;
+         width: 50%;
+         margin: 0;
+         padding: 0;
      }
+  
+     .gallery-main-flex{
+         flex-direction: column-reverse;
+         height: auto;
+     }
+     .gallery-flex-item {
+         width: 100%;
+        //  border: 2px solid red;
+        //  min-height: 200px;
+     }
+     .long-img {
+         display: none;
+         border:2px solid red;
+     }
+
+
 
  }
 

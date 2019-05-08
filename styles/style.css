@@ -259,7 +259,6 @@ button {
 }
 
 .header-nav-bar {
-  background: #595959;
   background: linear-gradient(180deg, #1c1c1c 53px, #e5e5e5 53px);
   height: 55px;
   display: -webkit-box;
@@ -270,21 +269,6 @@ button {
   z-index: 20;
   -webkit-box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.4);
           box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.4);
-}
-
-.logo-container {
-  width: 170px;
-  height: 40px;
-  padding-top: 5px;
-  position: absolute;
-  left: 50%;
-  margin-left: -85px;
-  top: 7px;
-  z-index: 0;
-}
-
-.logo-container p {
-  color: #e5e5e5;
 }
 
 .header-nav {
@@ -566,7 +550,7 @@ header {
   z-index: 5;
 }
 
-.arms-svg {
+.logo-container {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -795,6 +779,45 @@ header {
   .gallery-img:nth-child(4) {
     margin: 5px;
   }
+  .gallery-main-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  .gallery-img {
+    height: 200px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+  }
+  .long-img {
+    display: none;
+  }
+  .long-container {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #meat-img, #fish-img {
+    width: 50%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+  #meat-img img, #fish-img img {
+    display: block;
+  }
+  .logo-container {
+    display: none;
+  }
+  .gallery-flex-item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -816,20 +839,64 @@ header {
   }
   .about-main-description {
     width: 90%;
-    border: none;
     padding: 20px 20px 0px;
+  }
+  .logo-container {
+    display: none;
+  }
+  .about-main-description::before, .about-main-description::after {
+    display: none;
+  }
+  .gallery-flex-item {
+    width: 100%;
   }
   .gallery-img {
     height: 180px;
   }
+  .long-container {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .long-container #meat-img, .long-container #fish-img {
+    width: 50%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+  }
+  .long-container #meat-img img, .long-container #fish-img img {
+    display: block;
+  }
 }
 
 @media (max-width: 375px) {
+  #about {
+    min-height: auto;
+  }
   .about-main-description {
     padding: 20px 14px 0px;
   }
   .gallery-img {
     height: 150px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .gallery-main-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+  .gallery-flex-item {
+    width: 100%;
+  }
+  .long-img {
+    display: none;
+    border: 2px solid red;
   }
 }
 

@@ -1,6 +1,4 @@
 .header-nav-bar {
-    background: $grey;
-    // background:$black;
     background: linear-gradient(180deg, $black 53px, $white 53px);
     height: 55px;
     display: flex;
@@ -8,23 +6,6 @@
     width: 100%;
     z-index: 20;
     box-shadow: 0px 4px 10px -4px rgba(65,64,66,0.4);
-    // position: relative;
-}
-
-.logo-container {
-    width: 170px;
-    height: 40px;
-    padding-top: 5px;
-    // border: 1px solid red;
-    position: absolute;
-    left: 50%;
-    margin-left: -85px;
-    // left: calc(50% - 30px);
-    top: 7px;
-    z-index: 0;
-    p {
-        color: $white;
-    }
 }
 
 .header-nav {
@@ -68,9 +49,6 @@
  @media (max-width: #{$mobile}){
      #english-nav, #russian-nav {
          display: none;
-    }
-    .translate {
-        // display: none;
     }
  }
 
