@@ -831,6 +831,7 @@ header {
   }
   .long-img {
     width: 50%;
+    height: 100%;
     border: 4px solid green;
   }
   .gallery-img, #meat-img, #fish-img {
@@ -844,6 +845,7 @@ header {
   }
   .long-img {
     border: 4px solid pink;
+    height: 100%;
   }
   .about-main-description {
     padding: 20px 14px 0px;
