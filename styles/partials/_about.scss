@@ -315,19 +315,19 @@ background-repeat: no-repeat;
 
       
      .gallery-img, #meat-img, #fish-img{
-         height: 180px;
+         height: 150px;
      }
-     .long-container {
-         width: 100%;
-         flex-direction: row;
-    }
+    //  .long-container {
+    //      width: 100%;
+    //      flex-direction: row;
+    // }
       #meat-img, #fish-img {
-             width: 50%;
-             height: 180px;
+            //  width: 50%;
+             height: 150px;
     }
-      .long-img {
-         display: none;
-     }
+    //   .long-img {
+    //      display: none;
+    //  }
 
 }
 

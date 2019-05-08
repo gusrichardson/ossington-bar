@@ -268,7 +268,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 20;
   -webkit-box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.4);
@@ -844,21 +844,10 @@ header {
     display: none;
   }
   .gallery-img, #meat-img, #fish-img {
-    height: 180px;
-  }
-  .long-container {
-    width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    height: 150px;
   }
   #meat-img, #fish-img {
-    width: 50%;
-    height: 180px;
-  }
-  .long-img {
-    display: none;
+    height: 150px;
   }
 }
 
