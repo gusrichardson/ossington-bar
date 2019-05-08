@@ -137,7 +137,7 @@
          height: 900px;
      }
      .menu-slide {
-         padding: 20px 0;
+         padding: 40px 0 0 0;
           background: RGBA(229, 229, 229, 1);
      }
  }
@@ -145,8 +145,5 @@
  @media (max-width: #{$final-width}) {
      .menu {
          min-height: 950px;
-     }
-     .menu-slide {
-         padding: 20px 0;
      }
  }
