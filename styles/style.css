@@ -475,7 +475,7 @@ header {
 
 @media (max-width: 500px) {
   header {
-    background: #1c1c1c;
+    background: black;
   }
   .header-flex {
     min-height: 80vh;
