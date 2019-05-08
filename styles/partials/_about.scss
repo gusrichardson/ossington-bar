@@ -51,18 +51,18 @@
     z-index: 5;
 }
 
-// .logo-container {
-//     position: absolute;
-//     width: 100px;
-//     height: 100px;
-//     right:-50px;
-//     bottom: -470px;
-//     z-index: 1;
-//     border-radius: 50%;
-//     overflow:hidden;
-//     opacity: 1;
-//     border:2px solid $gold;
-// }
+.logo-container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right:-50px;
+    bottom: -470px;
+    z-index: 1;
+    border-radius: 50%;
+    overflow:hidden;
+    opacity: 1;
+    border:2px solid $gold;
+}
 
 // END MAIN FLEX CONTAINER
 
@@ -304,10 +304,8 @@ background-repeat: no-repeat;
          padding: 20px 14px 0px;
      }
         .logo-container{
-        width: 1px;
-        height: 1px;
          display: none;
-         right: 10%;
+        //  right: 10%;
      }
      
     //  .long-img {

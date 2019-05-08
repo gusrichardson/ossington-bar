@@ -559,6 +559,19 @@ header {
   z-index: 5;
 }
 
+.logo-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: -50px;
+  bottom: -470px;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 1;
+  border: 2px solid #f7c630;
+}
+
 .gallery-main-flex {
   height: 400px;
   margin-top: 20px;
@@ -828,10 +841,7 @@ header {
     padding: 20px 14px 0px;
   }
   .logo-container {
-    width: 1px;
-    height: 1px;
     display: none;
-    right: 10%;
   }
   .gallery-img, #meat-img, #fish-img {
     height: 180px;
