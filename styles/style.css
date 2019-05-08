@@ -534,40 +534,6 @@ header {
   position: relative;
 }
 
-.about-main-description::after {
-  position: absolute;
-  content: "";
-  background: #e5e5e5;
-  height: 200px;
-  width: 2px;
-  right: 0;
-}
-
-.about-main-description::before {
-  position: absolute;
-  content: "";
-  background: #e5e5e5;
-  height: 10px;
-  width: 10px;
-  right: -4px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  z-index: 5;
-}
-
-.logo-container {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  right: -50px;
-  bottom: -470px;
-  z-index: 1;
-  border-radius: 50%;
-  overflow: hidden;
-  opacity: 1;
-  border: 2px solid #f7c630;
-}
-
 .gallery-main-flex {
   height: 400px;
   margin-top: 20px;
