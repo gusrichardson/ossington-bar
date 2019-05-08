@@ -296,38 +296,39 @@ background-repeat: no-repeat;
          right: 10%;
      }
      
-     .long-img {
-         width: 50%;
-         height: 100%;
-     }
+    //  .long-img {
+    //      width: 50%;
+    //      height: 100%;
+    //  }
 
       
      .gallery-img, #meat-img, #fish-img{
-         height: 150px;
+         height: 180px;
      }
-        //   .long-container {
-        //  width: 100%;
-        //  flex-direction: row;
-        //  #meat-img, #fish-img {
-        //      width: 50%;
-        //      height: 150px;
-        //  }
-    //  .long-img {
-    //      display: none;
-    //  }
+     .long-container {
+         width: 100%;
+         flex-direction: row;
+    }
+      #meat-img, #fish-img {
+             width: 50%;
+             height: 180px;
+    }
+      .long-img {
+         display: none;
+     }
 
- }
+}
 
  @media (max-width: #{$final-width}){
      #about {
          min-height: auto;
      }
-     .long-img {
-         height: 100%;
-         height: 300px;
-         margin: 0;
-         padding: 0;
-     }
+    //  .long-img {
+    //      height: 100%;
+    //      height: 300px;
+    //      margin: 0;
+    //      padding: 0;
+    //  }
      .about-main-description{
          padding: 20px 12px 0px;
 
@@ -338,7 +339,8 @@ background-repeat: no-repeat;
          margin: 0;
          padding: 0;
      }
+     #meat-img, #fish-img {
+         height: 150px;
+     }
   
  }
-
-
