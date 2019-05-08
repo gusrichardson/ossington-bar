@@ -253,6 +253,7 @@ background-repeat: no-repeat;
      .long-container {
          width: 50%;
          flex-direction: column;
+         border: 2px solid red;
      }
         #meat-img, #fish-img {
              width: 100%;
@@ -265,6 +266,7 @@ background-repeat: no-repeat;
          }
      .gallery-flex-item{
          width: 100%;
+         border: 2px solid blue;
      }
 
  }
@@ -291,6 +293,10 @@ background-repeat: no-repeat;
          display: none;
      }
      
+     .long-img {
+         width: 50%;
+         border: 4px solid green;
+     }
 
       
      .gallery-img, #meat-img, #fish-img{
@@ -312,6 +318,9 @@ background-repeat: no-repeat;
  @media (max-width: #{$final-width}){
      #about {
          min-height: auto;
+     }
+     .long-img {
+         border: 4px solid pink;
      }
      .about-main-description{
          padding: 20px 14px 0px;
