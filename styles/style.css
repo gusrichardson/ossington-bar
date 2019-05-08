@@ -590,10 +590,15 @@ header {
   -webkit-transition: all 1s;
   transition: all 1s;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .gallery-img img {
+  max-width: 2px;
+  max-height: 2px;
   position: absolute;
+  left: 50%;
+  bottom: 0;
   clip: rect(0 0 0 0);
 }
 
@@ -622,9 +627,14 @@ header {
   width: 100%;
   height: 50%;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .square-img img {
+  max-width: 2px;
+  max-height: 2px;
+  bottom: 0;
+  left: 50%;
   position: absolute;
   clip: rect(0 0 0 0);
 }
