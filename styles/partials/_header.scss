@@ -1,5 +1,5 @@
 header {
-    min-height: 100vh;
+    min-height: 105vh;
     background: url(../assets/borsch-rect.jpg);
     // background: url(../assets/unsplash-boursh.jpg);
     // filter: grayscale(100%);
@@ -11,6 +11,19 @@ header {
     position: relative;
     //PARALLAX 
     overflow: hidden;
+}
+
+.address-bar {
+    position: absolute;
+    top: 55px;
+    text-align: center;
+    width: 100%;
+    background: $grey;
+    height: 35px;
+    padding-top: 4px;
+    font-size: .8rem;
+    color: $black;
+    text-transform: uppercase;
 }
 
 //experimenting
@@ -58,41 +71,6 @@ header {
     }
 }
 
-.letter {
-    position: absolute;
-}
-
-#letter-1 {
-    left: 0;
-}
-
-#letter-2 {
-    left: 70px;
-}
-
-#letter-3 {
-    left: 120px;
-}
-#letter-4 {
-    left: 170px;
-}
-#letter-5 {
-    left: 200px;
-}
-#letter-6 {
-    left: 270px;
-}
-#letter-7 {
-    left: 330px;
-}
-#letter-8 {
-    left: 380px;
-}
-#letter-9 {
-    left: 450px;
-}
-
-
 .scroll-down-bar {
     height: 50px;
     width: 2px;
@@ -113,7 +91,7 @@ header {
     align-items: center;
     // REMOVED FOR PARALLAX
     // min-height: calc(100vh - 50px);
-    min-height: 100vh;
+    min-height: 105vh;
     background:RGBA(0, 0, 0, 0.3);
     // background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), 40%, rgba(0, 0, 0, 1));
 
@@ -175,6 +153,12 @@ header {
  @media (max-width: #{$mobile}){
      header {
          background: $black;
+     }
+     .address-bar {
+         padding-top: 6px;
+         p{
+              font-size: .7rem;
+         }
      }
      .header-flex {
          min-height: 80vh;

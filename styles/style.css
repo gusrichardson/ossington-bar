@@ -322,7 +322,7 @@ button {
 }
 
 header {
-  min-height: 100vh;
+  min-height: 105vh;
   background: url(../assets/borsch-rect.jpg);
   background-position: 100% 70%;
   background-size: cover;
@@ -330,6 +330,19 @@ header {
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
+}
+
+.address-bar {
+  position: absolute;
+  top: 55px;
+  text-align: center;
+  width: 100%;
+  background: #595959;
+  height: 35px;
+  padding-top: 4px;
+  font-size: .8rem;
+  color: #1c1c1c;
+  text-transform: uppercase;
 }
 
 .scroll-down-container {
@@ -370,46 +383,6 @@ header {
   z-index: 10;
 }
 
-.letter {
-  position: absolute;
-}
-
-#letter-1 {
-  left: 0;
-}
-
-#letter-2 {
-  left: 70px;
-}
-
-#letter-3 {
-  left: 120px;
-}
-
-#letter-4 {
-  left: 170px;
-}
-
-#letter-5 {
-  left: 200px;
-}
-
-#letter-6 {
-  left: 270px;
-}
-
-#letter-7 {
-  left: 330px;
-}
-
-#letter-8 {
-  left: 380px;
-}
-
-#letter-9 {
-  left: 450px;
-}
-
 .scroll-down-bar {
   height: 50px;
   width: 2px;
@@ -436,7 +409,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  min-height: 105vh;
   background: RGBA(0, 0, 0, 0.3);
 }
 
@@ -485,6 +458,12 @@ header {
   header {
     background: #1c1c1c;
   }
+  .address-bar {
+    padding-top: 6px;
+  }
+  .address-bar p {
+    font-size: .7rem;
+  }
   .header-flex {
     min-height: 80vh;
     background: RGBA(0, 0, 0, 0);
@@ -502,7 +481,9 @@ header {
 
 #about {
   min-height: 100vh;
-  background: #1c1c1c;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background: linear-gradient(180deg, #e5e5e5 2px, #1c1c1c 2px calc(100% - 2px), #e5e5e5 calc(100% - 2px));
   color: #e5e5e5;
   padding-bottom: 40px;
@@ -1008,22 +989,6 @@ header {
   width: 100%;
 }
 
-.zigzag {
-  position: absolute;
-  height: 10px;
-  width: 100%;
-  bottom: 0;
-}
-
-.zigzag:before {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 10px;
-  background: linear-gradient(-45deg, transparent 33.33%, #1c1c1c 33.33%, #1c1c1c 66.66%, transparent 66.66%), linear-gradient(45deg, transparent 33.33%, #1c1c1c 33.33%, #1c1c1c 66.66%, transparent 66.66%);
-  background-size: 30px 60px;
-}
-
 @media (max-width: 800px) {
   .menu {
     width: 100%;
@@ -1057,8 +1022,8 @@ header {
 }
 
 #contact {
-  padding-top: 60px;
   background: #1c1c1c;
+  background: linear-gradient(180deg, #e5e5e5 2px, #1c1c1c 2px);
 }
 
 #contact h2 {
@@ -1197,9 +1162,10 @@ iframe {
 
 footer {
   height: 40px;
-  background: #1c1c1c;
+  background: linear-gradient(180deg, #e5e5e5 2px, #1c1c1c 2px);
   color: #e5e5e5;
   text-align: center;
+  padding-top: 4px;
 }
 
 .russian {

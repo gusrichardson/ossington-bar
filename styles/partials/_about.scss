@@ -1,6 +1,11 @@
 #about {
     min-height: 100vh;
-    background: $black;
+    // background: url(../assets/ossington-bar-black-white.jpg);
+    // background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    // background: $black;
     background: linear-gradient(180deg, $white 2px, $black 2px calc(100% - 2px), $white calc(100% - 2px));
     color: $white;
     padding-bottom: 40px;
@@ -8,6 +13,7 @@
         color: $gold;
     }
 }
+
 
 // MAIN FLEX CONTAINER WITH DENIS IMAGE AND DESCRIPTION
 .about-flex {
