@@ -151,7 +151,7 @@
     background-repeat: no-repeat;
     transition: all 1s;
     border: 5px solid $white;
-    border-left: 2.5px solid $white;
+    border-left: 5px solid $white;
 }
 #fish-img:hover {
     background-size: auto 125%;
@@ -169,14 +169,14 @@
 .gallery-img:nth-child(2){
 background: url(../assets/hendersonbeer.jpg);
 background-position: 80%;
-background-size: auto 120%;
+background-size: auto 125%;
 background-repeat: no-repeat;
 border: 5px solid $white;
 border-left: 2.5px solid $white;
-border-right: 2.5px solid $white;
+border-right: none;
 }
 .gallery-img:nth-child(2):hover {
-    background-size: auto 125%;
+    background-size: auto 130%;
 }
 
 .gallery-img:nth-child(1):hover {
@@ -312,6 +312,7 @@ border-right: 2.5px solid $white;
       }
          .gallery-img:nth-child(2){
           border-left: none;
+          border-right: 5px solid $white;
  }
 }
 
