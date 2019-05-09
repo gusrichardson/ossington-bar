@@ -869,8 +869,11 @@ header {
     margin: 0 auto;
   }
   .about-main-description {
-    width: 90%;
-    padding: 20px 14px 0px;
+    width: 100%;
+    padding: 20px 16px 0px;
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
   }
   .logo-container {
     display: none;
