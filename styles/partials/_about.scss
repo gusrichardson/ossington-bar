@@ -1,7 +1,7 @@
 #about {
     min-height: 100vh;
     background: $black;
-    background: linear-gradient(180deg, $white 2px, $black 2px);
+    background: linear-gradient(180deg, $white 2px, $black 2px calc(100% - 2px), $white calc(100% - 2px));
     color: $white;
     padding-bottom: 40px;
     h2 {
@@ -119,6 +119,7 @@
     height: 50%;
     background-repeat: no-repeat;
     position: relative;
+    border: 5px solid $white;
     img {
         max-width: 2px;
         max-height: 2px;
@@ -135,6 +136,8 @@
     background-position: 0% 40%;
       background-repeat: no-repeat;
       transition: all 1s;
+      border: 5px solid $white;
+      border-top: none;
 }
 
 #meat-img:hover {
@@ -147,6 +150,8 @@
     background-position: 50%;
     background-repeat: no-repeat;
     transition: all 1s;
+    border: 5px solid $white;
+    border-left: 2.5px solid $white;
 }
 #fish-img:hover {
     background-size: auto 125%;
@@ -156,6 +161,8 @@
     background: url(../assets/khinkali-rect.png);
     background-position: 60% 10%;
     background-size: auto 130%;
+    border: 5px solid $white;
+    border-right: 2.5px solid $white;
   
 }
 
@@ -164,6 +171,9 @@ background: url(../assets/hendersonbeer.jpg);
 background-position: 80%;
 background-size: auto 120%;
 background-repeat: no-repeat;
+border: 5px solid $white;
+border-left: 2.5px solid $white;
+border-right: 2.5px solid $white;
 }
 .gallery-img:nth-child(2):hover {
     background-size: auto 125%;
@@ -181,6 +191,8 @@ background-repeat: no-repeat;
     width: 50%;
     transition: all 1s;
     position: relative;
+    border: 5px solid $white;
+    border-left: none;
     img {
          max-width: 2px;
         max-height: 2px;
@@ -288,8 +300,20 @@ background-repeat: no-repeat;
      .gallery-flex-item{
          width: 100%;
      }
-
+     //with borders
+     #fish-img {
+         border-left: 5px solid $white;
+     }
+     .gallery-img:nth-child(1), .gallery-img:nth-child(2){
+         border-top: none;
+     }
+      .gallery-img:nth-child(1){
+          border-right: 5px solid $white;
+      }
+         .gallery-img:nth-child(2){
+          border-left: none;
  }
+}
 
   @media (max-width: 600px){
       .about-main-img {
