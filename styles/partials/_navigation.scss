@@ -82,6 +82,8 @@
         min-height: 110vh;
         background: url(../assets/old-man.jpg);
         background-position: 0% 0%;
+        background-size: 50%;
+        // background-repeat: no-repeat;
         // background: $white;
         flex-direction: column;
         justify-content: flex-end;
@@ -93,11 +95,12 @@
         padding-top: 10%;
                li {
                    text-align: left;
+
                    display: block;
                    margin-top: 15px;
                    color: $gold;
                 //    width: 60px;
-                   font-size: 1.5rem;
+                   font-size: 2rem;
                    position: static;
                }
     }

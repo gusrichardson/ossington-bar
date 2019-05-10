@@ -344,6 +344,7 @@ button {
     min-height: 110vh;
     background: url(../assets/old-man.jpg);
     background-position: 0% 0%;
+    background-size: 50%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -364,7 +365,7 @@ button {
     display: block;
     margin-top: 15px;
     color: #f7c630;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: static;
   }
 }
