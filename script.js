@@ -57,5 +57,10 @@ $('document').ready(function () {
             width: '0'
         })
     })
+    $('.header-nav li').on('click', function () {
+        $('.header-nav').css({
+            width: '0',
+        })
+    })
 
 })
