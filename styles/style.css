@@ -341,7 +341,6 @@ button {
     left: 0;
     height: 100vh;
     background: #1c1c1c;
-    border-right: 2px solid #e5e5e5;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
