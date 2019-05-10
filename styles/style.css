@@ -270,7 +270,7 @@ button {
   display: flex;
   position: fixed;
   width: 100%;
-  z-index: 20;
+  z-index: 100;
   -webkit-box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.4);
           box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.4);
 }
@@ -316,17 +316,19 @@ button {
 }
 
 #side-nav-button {
-  width: 100px;
-  height: 30px;
-  background: #e5e5e5;
+  color: #e5e5e5;
   position: absolute;
-  left: 100px;
+  left: 30px;
   margin: 0;
-  top: 10px;
+  top: 15px;
 }
 
 #close-menu {
   display: none;
+}
+
+.toggle-mobile-menu {
+  width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -337,10 +339,10 @@ button {
     display: block;
     position: fixed;
     z-index: 20;
-    top: 0;
+    top: 56px;
     left: 0;
     min-height: 110vh;
-    background: #1c1c1c;
+    background: #e5e5e5;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -357,6 +359,7 @@ button {
     text-align: center;
     display: block;
     margin-top: 15px;
+    color: #1c1c1c;
     font-size: 1.5rem;
     position: static;
   }
@@ -1231,6 +1234,6 @@ footer {
 }
 
 #russian-nav {
-  margin-top: 12px;
+  padding-top: 12px;
 }
 /*# sourceMappingURL=style.css.map */
