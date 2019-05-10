@@ -772,9 +772,6 @@ header {
 }
 
 @media (max-width: 800px) {
-  #about {
-    background: #1c1c1c;
-  }
   .about-main-description {
     border-right: 0;
     padding: 0px 0px 0px 20px;
@@ -842,9 +839,6 @@ header {
 }
 
 @media (max-width: 500px) {
-  #about {
-    background: #1c1c1c;
-  }
   .about-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

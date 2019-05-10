@@ -272,10 +272,6 @@ border-right: none;
 }
 
  @media (max-width: #{$tablet}){
-     #about {
-         background: $black;
-        //   background: linear-gradient(180deg, $white 2px, $black 2px calc(100% - 2px), $white calc(100% - 2px));
-     }
     .about-main-description{
         border-right: 0;
         padding: 0px 0px 0px 20px;
@@ -342,10 +338,6 @@ border-right: none;
   }
 
  @media (max-width: #{$mobile}){
-      #about {
-          background: $black;
-        //   background: linear-gradient(180deg, $white 2px, $black 2px calc(100% - 2px), $white calc(100% - 2px));
-     }
      .about-flex {
          flex-direction: column;
      }
