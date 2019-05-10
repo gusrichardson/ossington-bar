@@ -773,7 +773,7 @@ header {
 
 @media (max-width: 800px) {
   #about {
-    background: red;
+    background: #1c1c1c;
   }
   .about-main-description {
     border-right: 0;
@@ -843,7 +843,7 @@ header {
 
 @media (max-width: 500px) {
   #about {
-    background: red;
+    background: #1c1c1c;
   }
   .about-flex {
     -webkit-box-orient: vertical;
@@ -878,7 +878,7 @@ header {
 
 @media (max-width: 375px) {
   #about {
-    background: red;
+    background: #1c1c1c;
   }
   #about {
     min-height: auto;

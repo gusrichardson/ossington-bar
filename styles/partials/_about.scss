@@ -273,7 +273,7 @@ border-right: none;
 
  @media (max-width: #{$tablet}){
      #about {
-         background: red;
+         background: $black;
         //   background: linear-gradient(180deg, $white 2px, $black 2px calc(100% - 2px), $white calc(100% - 2px));
      }
     .about-main-description{
@@ -343,7 +343,7 @@ border-right: none;
 
  @media (max-width: #{$mobile}){
       #about {
-          background: red;
+          background: $black;
         //   background: linear-gradient(180deg, $white 2px, $black 2px calc(100% - 2px), $white calc(100% - 2px));
      }
      .about-flex {
@@ -389,7 +389,7 @@ border-right: none;
 
  @media (max-width: #{$final-width}){
       #about {
-          background: red;
+          background: $black;
         //   background: linear-gradient(180deg, $white 2px, $black 2px calc(100% - 2px), $white calc(100% - 2px));
      }
      #about {
