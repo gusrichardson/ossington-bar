@@ -49,13 +49,17 @@ $('document').ready(function () {
 
     $('#side-nav-button').on('click', function () {
         $('.header-nav').css({
-            width: "100%",
+            width: "100%"
         })
     });
+
     $('#close-menu').on('click', function () {
         $('.header-nav').css({
             width: '0'
         })
+        // $('#side-nav-button').css({
+        //     display: "block"
+        // })
     })
     $('.header-nav li').on('click', function () {
         $('.header-nav').css({

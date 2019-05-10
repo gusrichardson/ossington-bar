@@ -52,7 +52,9 @@
     position: absolute;
     left: 30px;
     margin: 0;
-    top: 15px;
+    top: 14px;
+    display: none;
+    // font-size: 1.3rem;
    
 }
 
@@ -70,6 +72,9 @@
     //  #english-nav, #russian-nav {
     //      display: none;
     // }
+    #side-nav-button {
+        display: block;
+    }
     #close-menu {
         display: block;
     }
@@ -80,9 +85,10 @@
         top: 55px;
         left: 0;
         min-height: 110vh;
-        background: url(../assets/old-man.jpg);
-        background-position: 0% 0%;
-        background-size: 50%;
+        background: $black;
+        // background: url(../assets/old-man.jpg);
+        // background-position: 0% 0%;
+        // background-size: 50%;
         // background-repeat: no-repeat;
         // background: $white;
         flex-direction: column;
@@ -94,13 +100,13 @@
         transition: all 1s;
         padding-top: 10%;
                li {
-                   text-align: left;
+                   text-align: center;
 
                    display: block;
                    margin-top: 15px;
-                   color: $gold;
+                   color: $white;
                 //    width: 60px;
-                   font-size: 2rem;
+                   font-size: 1.5rem;
                    position: static;
                }
     }
