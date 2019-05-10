@@ -77,10 +77,12 @@
         display: block;
         position: fixed;
         z-index: 20;
-        top: 56px;
+        top: 55px;
         left: 0;
         min-height: 110vh;
-        background: $white;
+        background: url(../assets/gentlemen-drinking.jpg);
+        background-position: center;
+        // background: $white;
         flex-direction: column;
         width: 0px;
         margin-left: 0;
@@ -92,9 +94,9 @@
                    text-align: center;
                    display: block;
                    margin-top: 15px;
-                   color: $black;
+                   color: $white;
                 //    width: 60px;
-                   font-size: 1.5rem;
+                   font-size: 2rem;
                    position: static;
                }
     }
