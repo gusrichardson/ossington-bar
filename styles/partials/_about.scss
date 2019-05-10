@@ -381,7 +381,7 @@ border-right: none;
 
  @media (max-width: #{$final-width}){
     #about {
-        background: linear-gradient(180deg, $white 2px, $black 2px);
+        background: linear-gradient(180deg, $black calc(100% - 2px), $white calc(100% - 2px));
     }
      .about-main-description{
          padding: 20px 12px 0px;
