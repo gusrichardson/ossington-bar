@@ -339,7 +339,7 @@ button {
     z-index: 20;
     top: 0;
     left: 0;
-    height: 100vh;
+    min-height: 110vh;
     background: #1c1c1c;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
