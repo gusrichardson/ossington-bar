@@ -871,9 +871,6 @@ header {
 }
 
 @media (max-width: 375px) {
-  #about {
-    min-height: auto;
-  }
   .about-main-description {
     padding: 20px 12px 0px;
   }

@@ -380,9 +380,7 @@ border-right: none;
 }
 
  @media (max-width: #{$final-width}){
-     #about {
-         min-height: auto;
-     }
+
      .about-main-description{
          padding: 20px 12px 0px;
 
