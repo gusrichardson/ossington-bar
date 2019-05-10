@@ -80,23 +80,24 @@
         top: 55px;
         left: 0;
         min-height: 110vh;
-        background: url(../assets/gentlemen-drinking.jpg);
-        background-position: center;
+        background: url(../assets/old-man.jpg);
+        background-position: 0% 0%;
         // background: $white;
         flex-direction: column;
+        justify-content: flex-end;
         width: 0px;
         margin-left: 0;
         overflow-x:hidden;
         width: 0;
         transition: all 1s;
-        padding-top: 80px;
+        padding-top: 10%;
                li {
-                   text-align: center;
+                   text-align: left;
                    display: block;
                    margin-top: 15px;
-                   color: $white;
+                   color: $gold;
                 //    width: 60px;
-                   font-size: 2rem;
+                   font-size: 1.5rem;
                    position: static;
                }
     }

@@ -342,26 +342,29 @@ button {
     top: 55px;
     left: 0;
     min-height: 110vh;
-    background: url(../assets/gentlemen-drinking.jpg);
-    background-position: center;
+    background: url(../assets/old-man.jpg);
+    background-position: 0% 0%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 0px;
     margin-left: 0;
     overflow-x: hidden;
     width: 0;
     -webkit-transition: all 1s;
     transition: all 1s;
-    padding-top: 80px;
+    padding-top: 10%;
   }
   .header-nav li {
-    text-align: center;
+    text-align: left;
     display: block;
     margin-top: 15px;
-    color: #e5e5e5;
-    font-size: 2rem;
+    color: #f7c630;
+    font-size: 1.5rem;
     position: static;
   }
 }
