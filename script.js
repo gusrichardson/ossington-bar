@@ -1,5 +1,4 @@
 $('document').ready(function () {
-    console.log('ready!')
 
     $('a[href*="#"]').on('click', function () {
         target = $(this.hash);
