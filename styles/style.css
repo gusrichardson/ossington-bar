@@ -315,9 +315,51 @@ button {
   width: 100%;
 }
 
+#side-nav-button {
+  width: 100px;
+  height: 30px;
+  background: #e5e5e5;
+  position: absolute;
+  left: 100px;
+  margin: 0;
+  top: 10px;
+}
+
+#close-menu {
+  display: none;
+}
+
 @media (max-width: 500px) {
-  #english-nav, #russian-nav {
-    display: none;
+  #close-menu {
+    display: block;
+  }
+  .header-nav {
+    display: block;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #1c1c1c;
+    border-right: 2px solid #e5e5e5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 0px;
+    margin-left: 0;
+    overflow-x: hidden;
+    width: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    padding-top: 60px;
+  }
+  .header-nav li {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    position: static;
   }
 }
 

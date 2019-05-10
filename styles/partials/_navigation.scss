@@ -44,12 +44,54 @@
     }
 }
 
+#side-nav-button {
+    width: 100px;
+    height: 30px;
+    background: $white;
+    position: absolute;
+    left: 100px;
+    margin: 0;
+    top: 10px;
+   
+}
+
+#close-menu {
+    display: none;
+}
 
 // MEDIA QUERIES
 
  @media (max-width: #{$mobile}){
-     #english-nav, #russian-nav {
-         display: none;
+    //  #english-nav, #russian-nav {
+    //      display: none;
+    // }
+    #close-menu {
+        display: block;
+    }
+    .header-nav {
+        display: block;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: $black;
+        border-right: 2px solid $white;
+        flex-direction: column;
+        width: 0px;
+        margin-left: 0;
+        overflow-x:hidden;
+        width: 0;
+        transition: all 1s;
+        padding-top: 60px;
+               li {
+                   text-align: center;
+                   display: block;
+                   margin-top: 10px;
+                //    width: 60px;
+                   font-size: 1.5rem;
+                   position: static;
+               }
     }
  }
 
