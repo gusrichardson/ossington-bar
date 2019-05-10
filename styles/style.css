@@ -871,6 +871,9 @@ header {
 }
 
 @media (max-width: 375px) {
+  #about {
+    background: linear-gradient(180deg, #e5e5e5 2px, #1c1c1c 2px);
+  }
   .about-main-description {
     padding: 20px 12px 0px;
   }
