@@ -49,7 +49,7 @@ $('document').ready(function () {
 
     $('#side-nav-button').on('click', function () {
         $('.header-nav').css({
-            width: "100%"
+            width: "50%"
         })
     });
 
