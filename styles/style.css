@@ -366,7 +366,7 @@ button {
     text-align: center;
     display: block;
     margin-top: 15px;
-    color: #e5e5e5;
+    color: #f7c630;
     font-size: 1.5rem;
     position: static;
   }
@@ -374,8 +374,8 @@ button {
 
 header {
   min-height: 105vh;
-  background: url(../assets/borsch-rect.jpg);
-  background-position: 100% 70%;
+  background: url(../assets/chairs-up-b-w.jpg);
+  background-position: 0% 80%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
