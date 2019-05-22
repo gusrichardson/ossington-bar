@@ -4,6 +4,13 @@
     display: block;
 }
 
+#russian-nav {
+    padding-top: 14px;
+    min-width: 416px;
+    // border: 1px solid red;
+
+}
+
 //FOR TOGGLING CLASS
 .display-none {
     display: none;
@@ -22,6 +29,15 @@
     color: $gold;
 }
 
-#russian-nav {
-    padding-top: 14px;
+
+
+#english-nav {
+    // border: 1px solid red;
 }
+
+ @media (max-width: #{$mobile}){
+      #russian-nav {
+          min-width: 0;
+          max-width: 50%;
+      }
+ }

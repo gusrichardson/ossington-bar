@@ -339,6 +339,9 @@ button {
   #close-menu {
     display: block;
   }
+  #russian-nav {
+    max-width: 50%;
+  }
   .header-nav {
     display: block;
     position: fixed;
@@ -466,7 +469,8 @@ header {
 
 .welcome-text {
   width: 100%;
-  height: 200px;
+  height: 350px;
+  padding-top: 100px;
   width: 900px;
   text-align: center;
   position: relative;
@@ -1223,6 +1227,11 @@ footer {
   display: block;
 }
 
+#russian-nav {
+  padding-top: 14px;
+  min-width: 416px;
+}
+
 .display-none {
   display: none;
 }
@@ -1240,7 +1249,10 @@ footer {
   color: #f7c630;
 }
 
-#russian-nav {
-  padding-top: 14px;
+@media (max-width: 500px) {
+  #russian-nav {
+    min-width: 0;
+    max-width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
