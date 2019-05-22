@@ -35,8 +35,15 @@
     // border: 1px solid red;
 }
 
+@media (max-width: 580px){
+    #russian-nav {
+        margin-left: 5px;
+    }
+}
+
  @media (max-width: #{$mobile}){
       #russian-nav {
+          margin-left: 0;
           min-width: 0;
           max-width: 50%;
       }

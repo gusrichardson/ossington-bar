@@ -1249,8 +1249,15 @@ footer {
   color: #f7c630;
 }
 
+@media (max-width: 580px) {
+  #russian-nav {
+    margin-left: 5px;
+  }
+}
+
 @media (max-width: 500px) {
   #russian-nav {
+    margin-left: 0;
     min-width: 0;
     max-width: 50%;
   }
